@@ -1,0 +1,818 @@
+<html>
+<head>
+<title>be my friend.html</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #d5b778;}
+.s1 { color: #bcbec4;}
+.s2 { color: #bababa;}
+.s3 { color: #6aab73;}
+.s4 { color: #2aacb8;}
+.s5 { color: #56a8f5;}
+.s6 { color: #7a7e85;}
+.s7 { color: #cf8e6d;}
+</style>
+</head>
+<body bgcolor="#191a1c">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+be my friend.html</font>
+</center></td></tr></table>
+<pre><span class="s0">&lt;!DOCTYPE </span><span class="s2">html</span><span class="s0">&gt;</span>
+<span class="s0">&lt;html </span><span class="s2">lang</span><span class="s3">=&quot;en&quot;</span><span class="s0">&gt;</span>
+<span class="s0">&lt;head&gt;</span>
+  <span class="s0">&lt;meta </span><span class="s2">charset</span><span class="s3">=&quot;UTF-8&quot;</span><span class="s0">&gt;</span>
+  <span class="s0">&lt;title&gt;</span><span class="s1">Will You Be My Friend? 🐱</span><span class="s0">&lt;/title&gt;</span>
+  <span class="s0">&lt;style&gt;</span>
+    <span class="s0">* </span><span class="s1">{ </span><span class="s2">margin</span><span class="s1">: </span><span class="s4">0</span><span class="s1">; </span><span class="s2">padding</span><span class="s1">: </span><span class="s4">0</span><span class="s1">; </span><span class="s2">box-sizing</span><span class="s1">: </span><span class="s3">border-box</span><span class="s1">; }</span>
+
+    <span class="s0">body </span><span class="s1">{</span>
+      <span class="s2">font-family</span><span class="s1">: </span><span class="s3">'Comic Sans MS'</span><span class="s1">, </span><span class="s3">'Segoe UI'</span><span class="s1">, </span><span class="s3">cursive</span><span class="s1">;</span>
+      <span class="s2">background</span><span class="s1">: </span><span class="s0">linear-gradient</span><span class="s1">(</span><span class="s4">135</span><span class="s3">deg</span><span class="s1">, </span><span class="s5">#ffecd2 </span><span class="s4">0</span><span class="s1">%, </span><span class="s5">#fcb69f </span><span class="s4">50</span><span class="s1">%, </span><span class="s5">#ffc1cc </span><span class="s4">100</span><span class="s1">%);</span>
+      <span class="s2">min-height</span><span class="s1">: </span><span class="s4">100</span><span class="s3">vh</span><span class="s1">;</span>
+      <span class="s2">display</span><span class="s1">: </span><span class="s3">flex</span><span class="s1">;</span>
+      <span class="s2">justify-content</span><span class="s1">: </span><span class="s3">center</span><span class="s1">;</span>
+      <span class="s2">align-items</span><span class="s1">: </span><span class="s3">center</span><span class="s1">;</span>
+      <span class="s2">overflow</span><span class="s1">: </span><span class="s3">hidden</span><span class="s1">;</span>
+      <span class="s2">position</span><span class="s1">: </span><span class="s3">relative</span><span class="s1">;</span>
+      <span class="s2">padding</span><span class="s1">: </span><span class="s4">20</span><span class="s3">px</span><span class="s1">;</span>
+    <span class="s1">}</span>
+
+    <span class="s6">/* Floating background decorations */</span>
+    <span class="s7">@keyframes </span><span class="s0">floatUp </span><span class="s1">{</span>
+      <span class="s0">0% </span><span class="s1">{ </span><span class="s2">transform</span><span class="s1">: </span><span class="s0">translateY</span><span class="s1">(</span><span class="s4">100</span><span class="s3">vh</span><span class="s1">) </span><span class="s0">rotate</span><span class="s1">(</span><span class="s4">0</span><span class="s3">deg</span><span class="s1">); </span><span class="s2">opacity</span><span class="s1">: </span><span class="s4">0</span><span class="s1">; }</span>
+      <span class="s0">10% </span><span class="s1">{ </span><span class="s2">opacity</span><span class="s1">: </span><span class="s4">0.6</span><span class="s1">; }</span>
+      <span class="s0">100% </span><span class="s1">{ </span><span class="s2">transform</span><span class="s1">: </span><span class="s0">translateY</span><span class="s1">(-</span><span class="s4">100</span><span class="s3">vh</span><span class="s1">) </span><span class="s0">rotate</span><span class="s1">(</span><span class="s4">360</span><span class="s3">deg</span><span class="s1">); </span><span class="s2">opacity</span><span class="s1">: </span><span class="s4">0</span><span class="s1">; }</span>
+    <span class="s1">}</span>
+
+    <span class="s1">.</span><span class="s0">container </span><span class="s1">{</span>
+      <span class="s2">background</span><span class="s1">: </span><span class="s0">rgba</span><span class="s1">(</span><span class="s4">255</span><span class="s1">, </span><span class="s4">255</span><span class="s1">, </span><span class="s4">255</span><span class="s1">, </span><span class="s4">0.9</span><span class="s1">);</span>
+      <span class="s2">backdrop-filter</span><span class="s1">: </span><span class="s0">blur</span><span class="s1">(</span><span class="s4">10</span><span class="s3">px</span><span class="s1">);</span>
+      <span class="s2">padding</span><span class="s1">: </span><span class="s4">35</span><span class="s3">px </span><span class="s4">40</span><span class="s3">px</span><span class="s1">;</span>
+      <span class="s2">border-radius</span><span class="s1">: </span><span class="s4">30</span><span class="s3">px</span><span class="s1">;</span>
+      <span class="s2">box-shadow</span><span class="s1">: </span><span class="s4">0 20</span><span class="s3">px </span><span class="s4">60</span><span class="s3">px </span><span class="s0">rgba</span><span class="s1">(</span><span class="s4">255</span><span class="s1">, </span><span class="s4">105</span><span class="s1">, </span><span class="s4">180</span><span class="s1">, </span><span class="s4">0.4</span><span class="s1">);</span>
+      <span class="s2">text-align</span><span class="s1">: </span><span class="s3">center</span><span class="s1">;</span>
+      <span class="s2">max-width</span><span class="s1">: </span><span class="s4">520</span><span class="s3">px</span><span class="s1">;</span>
+      <span class="s2">width</span><span class="s1">: </span><span class="s4">100</span><span class="s1">%;</span>
+      <span class="s2">position</span><span class="s1">: </span><span class="s3">relative</span><span class="s1">;</span>
+      <span class="s2">z-index</span><span class="s1">: </span><span class="s4">10</span><span class="s1">;</span>
+      <span class="s2">border</span><span class="s1">: </span><span class="s4">3</span><span class="s3">px dashed </span><span class="s5">#ff9bb3</span><span class="s1">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">h1 </span><span class="s1">{</span>
+      <span class="s2">font-size</span><span class="s1">: </span><span class="s4">1.6</span><span class="s3">em</span><span class="s1">;</span>
+      <span class="s2">color</span><span class="s1">: </span><span class="s5">#ff5b8a</span><span class="s1">;</span>
+      <span class="s2">margin-bottom</span><span class="s1">: </span><span class="s4">15</span><span class="s3">px</span><span class="s1">;</span>
+      <span class="s2">text-shadow</span><span class="s1">: </span><span class="s4">2</span><span class="s3">px </span><span class="s4">2</span><span class="s3">px </span><span class="s4">0 </span><span class="s5">#fff</span><span class="s1">;</span>
+    <span class="s1">}</span>
+
+    <span class="s6">/* ============ REALISTIC KITTEN ============ */</span>
+    <span class="s1">.</span><span class="s0">kitten-wrap </span><span class="s1">{</span>
+      <span class="s2">width</span><span class="s1">: </span><span class="s4">240</span><span class="s3">px</span><span class="s1">;</span>
+      <span class="s2">height</span><span class="s1">: </span><span class="s4">260</span><span class="s3">px</span><span class="s1">;</span>
+      <span class="s2">margin</span><span class="s1">: </span><span class="s4">0 </span><span class="s3">auto </span><span class="s4">15</span><span class="s3">px</span><span class="s1">;</span>
+      <span class="s2">position</span><span class="s1">: </span><span class="s3">relative</span><span class="s1">;</span>
+    <span class="s1">}</span>
+
+    <span class="s1">.</span><span class="s0">kitten </span><span class="s1">{</span>
+      <span class="s2">width</span><span class="s1">: </span><span class="s4">100</span><span class="s1">%;</span>
+      <span class="s2">height</span><span class="s1">: </span><span class="s4">100</span><span class="s1">%;</span>
+      <span class="s2">position</span><span class="s1">: </span><span class="s3">relative</span><span class="s1">;</span>
+      <span class="s2">animation</span><span class="s1">: </span><span class="s3">bounce </span><span class="s4">2.5</span><span class="s3">s ease-in-out infinite</span><span class="s1">;</span>
+      <span class="s2">transition</span><span class="s1">: </span><span class="s3">all </span><span class="s4">0.6</span><span class="s3">s ease</span><span class="s1">;</span>
+    <span class="s1">}</span>
+    <span class="s7">@keyframes </span><span class="s0">bounce </span><span class="s1">{</span>
+      <span class="s0">0%</span><span class="s1">, </span><span class="s0">100% </span><span class="s1">{ </span><span class="s2">transform</span><span class="s1">: </span><span class="s0">translateY</span><span class="s1">(</span><span class="s4">0</span><span class="s1">); }</span>
+      <span class="s0">50% </span><span class="s1">{ </span><span class="s2">transform</span><span class="s1">: </span><span class="s0">translateY</span><span class="s1">(-</span><span class="s4">8</span><span class="s3">px</span><span class="s1">); }</span>
+    <span class="s1">}</span>
+
+    <span class="s1">.</span><span class="s0">kitten</span><span class="s1">.</span><span class="s0">crying </span><span class="s1">{ </span><span class="s2">animation</span><span class="s1">: </span><span class="s3">shake </span><span class="s4">0.4</span><span class="s3">s ease-in-out infinite</span><span class="s1">; }</span>
+    <span class="s7">@keyframes </span><span class="s0">shake </span><span class="s1">{</span>
+      <span class="s0">0%</span><span class="s1">, </span><span class="s0">100% </span><span class="s1">{ </span><span class="s2">transform</span><span class="s1">: </span><span class="s0">translateX</span><span class="s1">(</span><span class="s4">0</span><span class="s1">) </span><span class="s0">rotate</span><span class="s1">(</span><span class="s4">0</span><span class="s1">); }</span>
+      <span class="s0">25% </span><span class="s1">{ </span><span class="s2">transform</span><span class="s1">: </span><span class="s0">translateX</span><span class="s1">(-</span><span class="s4">4</span><span class="s3">px</span><span class="s1">) </span><span class="s0">rotate</span><span class="s1">(-</span><span class="s4">2</span><span class="s3">deg</span><span class="s1">); }</span>
+      <span class="s0">75% </span><span class="s1">{ </span><span class="s2">transform</span><span class="s1">: </span><span class="s0">translateX</span><span class="s1">(</span><span class="s4">4</span><span class="s3">px</span><span class="s1">) </span><span class="s0">rotate</span><span class="s1">(</span><span class="s4">2</span><span class="s3">deg</span><span class="s1">); }</span>
+    <span class="s1">}</span>
+
+    <span class="s1">.</span><span class="s0">kitten</span><span class="s1">.</span><span class="s0">upset </span><span class="s1">{</span>
+      <span class="s2">animation</span><span class="s1">: </span><span class="s3">none</span><span class="s1">;</span>
+      <span class="s2">transform</span><span class="s1">: </span><span class="s0">scaleX</span><span class="s1">(-</span><span class="s4">1</span><span class="s1">);</span>
+    <span class="s1">}</span>
+
+    <span class="s6">/* BODY */</span>
+    <span class="s1">.</span><span class="s0">body </span><span class="s1">{</span>
+      <span class="s2">position</span><span class="s1">: </span><span class="s3">absolute</span><span class="s1">;</span>
+      <span class="s2">width</span><span class="s1">: </span><span class="s4">150</span><span class="s3">px</span><span class="s1">;</span>
+      <span class="s2">height</span><span class="s1">: </span><span class="s4">110</span><span class="s3">px</span><span class="s1">;</span>
+      <span class="s2">background</span><span class="s1">: </span><span class="s0">radial-gradient</span><span class="s1">(</span><span class="s3">ellipse at </span><span class="s4">30</span><span class="s1">% </span><span class="s4">30</span><span class="s1">%, </span><span class="s5">#ffd4a3</span><span class="s1">, </span><span class="s5">#e8a87c </span><span class="s4">70</span><span class="s1">%, </span><span class="s5">#c8895a</span><span class="s1">);</span>
+      <span class="s2">border-radius</span><span class="s1">: </span><span class="s4">50</span><span class="s1">% </span><span class="s4">50</span><span class="s1">% </span><span class="s4">45</span><span class="s1">% </span><span class="s4">45</span><span class="s1">%;</span>
+      <span class="s2">bottom</span><span class="s1">: </span><span class="s4">10</span><span class="s3">px</span><span class="s1">;</span>
+      <span class="s2">left</span><span class="s1">: </span><span class="s4">50</span><span class="s1">%;</span>
+      <span class="s2">transform</span><span class="s1">: </span><span class="s0">translateX</span><span class="s1">(-</span><span class="s4">50</span><span class="s1">%);</span>
+      <span class="s2">box-shadow</span><span class="s1">: </span><span class="s3">inset </span><span class="s1">-</span><span class="s4">15</span><span class="s3">px </span><span class="s1">-</span><span class="s4">10</span><span class="s3">px </span><span class="s4">25</span><span class="s3">px </span><span class="s0">rgba</span><span class="s1">(</span><span class="s4">120</span><span class="s1">, </span><span class="s4">60</span><span class="s1">, </span><span class="s4">20</span><span class="s1">, </span><span class="s4">0.3</span><span class="s1">),</span>
+      <span class="s3">inset </span><span class="s4">10</span><span class="s3">px </span><span class="s4">5</span><span class="s3">px </span><span class="s4">20</span><span class="s3">px </span><span class="s0">rgba</span><span class="s1">(</span><span class="s4">255</span><span class="s1">, </span><span class="s4">220</span><span class="s1">, </span><span class="s4">180</span><span class="s1">, </span><span class="s4">0.5</span><span class="s1">);</span>
+      <span class="s2">z-index</span><span class="s1">: </span><span class="s4">1</span><span class="s1">;</span>
+    <span class="s1">}</span>
+
+    <span class="s6">/* Stripes on body */</span>
+    <span class="s1">.</span><span class="s0">body</span><span class="s1">::</span><span class="s0">before </span><span class="s1">{</span>
+      <span class="s2">content</span><span class="s1">: </span><span class="s3">''</span><span class="s1">;</span>
+      <span class="s2">position</span><span class="s1">: </span><span class="s3">absolute</span><span class="s1">;</span>
+      <span class="s2">width</span><span class="s1">: </span><span class="s4">100</span><span class="s1">%; </span><span class="s2">height</span><span class="s1">: </span><span class="s4">100</span><span class="s1">%;</span>
+      <span class="s2">background</span><span class="s1">:</span>
+        <span class="s0">radial-gradient</span><span class="s1">(</span><span class="s3">ellipse </span><span class="s4">6</span><span class="s3">px </span><span class="s4">15</span><span class="s3">px at </span><span class="s4">30</span><span class="s1">% </span><span class="s4">20</span><span class="s1">%, </span><span class="s0">rgba</span><span class="s1">(</span><span class="s4">140</span><span class="s1">, </span><span class="s4">80</span><span class="s1">, </span><span class="s4">40</span><span class="s1">, </span><span class="s4">0.4</span><span class="s1">), </span><span class="s3">transparent</span><span class="s1">),</span>
+        <span class="s0">radial-gradient</span><span class="s1">(</span><span class="s3">ellipse </span><span class="s4">6</span><span class="s3">px </span><span class="s4">15</span><span class="s3">px at </span><span class="s4">70</span><span class="s1">% </span><span class="s4">25</span><span class="s1">%, </span><span class="s0">rgba</span><span class="s1">(</span><span class="s4">140</span><span class="s1">, </span><span class="s4">80</span><span class="s1">, </span><span class="s4">40</span><span class="s1">, </span><span class="s4">0.4</span><span class="s1">), </span><span class="s3">transparent</span><span class="s1">),</span>
+        <span class="s0">radial-gradient</span><span class="s1">(</span><span class="s3">ellipse </span><span class="s4">6</span><span class="s3">px </span><span class="s4">12</span><span class="s3">px at </span><span class="s4">50</span><span class="s1">% </span><span class="s4">50</span><span class="s1">%, </span><span class="s0">rgba</span><span class="s1">(</span><span class="s4">140</span><span class="s1">, </span><span class="s4">80</span><span class="s1">, </span><span class="s4">40</span><span class="s1">, </span><span class="s4">0.3</span><span class="s1">), </span><span class="s3">transparent</span><span class="s1">);</span>
+      <span class="s2">border-radius</span><span class="s1">: </span><span class="s3">inherit</span><span class="s1">;</span>
+    <span class="s1">}</span>
+
+    <span class="s6">/* Front Paws */</span>
+    <span class="s1">.</span><span class="s0">paw </span><span class="s1">{</span>
+      <span class="s2">position</span><span class="s1">: </span><span class="s3">absolute</span><span class="s1">;</span>
+      <span class="s2">width</span><span class="s1">: </span><span class="s4">32</span><span class="s3">px</span><span class="s1">;</span>
+      <span class="s2">height</span><span class="s1">: </span><span class="s4">38</span><span class="s3">px</span><span class="s1">;</span>
+      <span class="s2">background</span><span class="s1">: </span><span class="s0">radial-gradient</span><span class="s1">(</span><span class="s3">ellipse at </span><span class="s4">30</span><span class="s1">% </span><span class="s4">30</span><span class="s1">%, </span><span class="s5">#ffd4a3</span><span class="s1">, </span><span class="s5">#d99a6c</span><span class="s1">);</span>
+      <span class="s2">border-radius</span><span class="s1">: </span><span class="s4">50</span><span class="s1">% </span><span class="s4">50</span><span class="s1">% </span><span class="s4">40</span><span class="s1">% </span><span class="s4">40</span><span class="s1">%;</span>
+      <span class="s2">bottom</span><span class="s1">: </span><span class="s4">0</span><span class="s1">;</span>
+      <span class="s2">z-index</span><span class="s1">: </span><span class="s4">5</span><span class="s1">;</span>
+      <span class="s2">box-shadow</span><span class="s1">: </span><span class="s3">inset </span><span class="s1">-</span><span class="s4">3</span><span class="s3">px </span><span class="s1">-</span><span class="s4">3</span><span class="s3">px </span><span class="s4">8</span><span class="s3">px </span><span class="s0">rgba</span><span class="s1">(</span><span class="s4">120</span><span class="s1">, </span><span class="s4">60</span><span class="s1">, </span><span class="s4">20</span><span class="s1">, </span><span class="s4">0.3</span><span class="s1">);</span>
+    <span class="s1">}</span>
+    <span class="s1">.</span><span class="s0">paw</span><span class="s1">.</span><span class="s0">left </span><span class="s1">{ </span><span class="s2">left</span><span class="s1">: </span><span class="s4">65</span><span class="s3">px</span><span class="s1">; }</span>
+    <span class="s1">.</span><span class="s0">paw</span><span class="s1">.</span><span class="s0">right </span><span class="s1">{ </span><span class="s2">right</span><span class="s1">: </span><span class="s4">65</span><span class="s3">px</span><span class="s1">; }</span>
+
+    <span class="s1">.</span><span class="s0">paw</span><span class="s1">::</span><span class="s0">after </span><span class="s1">{</span>
+      <span class="s2">content</span><span class="s1">: </span><span class="s3">''</span><span class="s1">;</span>
+      <span class="s2">position</span><span class="s1">: </span><span class="s3">absolute</span><span class="s1">;</span>
+      <span class="s2">bottom</span><span class="s1">: </span><span class="s4">4</span><span class="s3">px</span><span class="s1">;</span>
+      <span class="s2">left</span><span class="s1">: </span><span class="s4">50</span><span class="s1">%;</span>
+      <span class="s2">transform</span><span class="s1">: </span><span class="s0">translateX</span><span class="s1">(-</span><span class="s4">50</span><span class="s1">%);</span>
+      <span class="s2">width</span><span class="s1">: </span><span class="s4">18</span><span class="s3">px</span><span class="s1">;</span>
+      <span class="s2">height</span><span class="s1">: </span><span class="s4">12</span><span class="s3">px</span><span class="s1">;</span>
+      <span class="s2">background</span><span class="s1">: </span><span class="s5">#ff9999</span><span class="s1">;</span>
+      <span class="s2">border-radius</span><span class="s1">: </span><span class="s4">50</span><span class="s1">%;</span>
+      <span class="s2">opacity</span><span class="s1">: </span><span class="s4">0.7</span><span class="s1">;</span>
+    <span class="s1">}</span>
+
+    <span class="s6">/* Heart shown when accepted quickly */</span>
+    <span class="s1">.</span><span class="s0">love-heart </span><span class="s1">{</span>
+      <span class="s2">position</span><span class="s1">: </span><span class="s3">absolute</span><span class="s1">;</span>
+      <span class="s2">width</span><span class="s1">: </span><span class="s4">24</span><span class="s3">px</span><span class="s1">;</span>
+      <span class="s2">height</span><span class="s1">: </span><span class="s4">24</span><span class="s3">px</span><span class="s1">;</span>
+      <span class="s2">bottom</span><span class="s1">: </span><span class="s4">25</span><span class="s3">px</span><span class="s1">;</span>
+      <span class="s2">opacity</span><span class="s1">: </span><span class="s4">0</span><span class="s1">;</span>
+      <span class="s2">z-index</span><span class="s1">: </span><span class="s4">10</span><span class="s1">;</span>
+      <span class="s2">transition</span><span class="s1">: </span><span class="s3">opacity </span><span class="s4">0.5</span><span class="s3">s</span><span class="s1">;</span>
+    <span class="s1">}</span>
+    <span class="s1">.</span><span class="s0">love-heart</span><span class="s1">.</span><span class="s0">left </span><span class="s1">{ </span><span class="s2">left</span><span class="s1">: </span><span class="s4">60</span><span class="s3">px</span><span class="s1">; }</span>
+    <span class="s1">.</span><span class="s0">love-heart</span><span class="s1">.</span><span class="s0">right </span><span class="s1">{ </span><span class="s2">right</span><span class="s1">: </span><span class="s4">60</span><span class="s3">px</span><span class="s1">; }</span>
+    <span class="s1">.</span><span class="s0">love-heart</span><span class="s1">::</span><span class="s0">before</span><span class="s1">, .</span><span class="s0">love-heart</span><span class="s1">::</span><span class="s0">after </span><span class="s1">{</span>
+      <span class="s2">content</span><span class="s1">: </span><span class="s3">''</span><span class="s1">;</span>
+      <span class="s2">position</span><span class="s1">: </span><span class="s3">absolute</span><span class="s1">;</span>
+      <span class="s2">width</span><span class="s1">: </span><span class="s4">14</span><span class="s3">px</span><span class="s1">;</span>
+      <span class="s2">height</span><span class="s1">: </span><span class="s4">22</span><span class="s3">px</span><span class="s1">;</span>
+      <span class="s2">background</span><span class="s1">: </span><span class="s0">linear-gradient</span><span class="s1">(</span><span class="s4">135</span><span class="s3">deg</span><span class="s1">, </span><span class="s5">#ff4d6d</span><span class="s1">, </span><span class="s5">#ff8fa3</span><span class="s1">);</span>
+      <span class="s2">border-radius</span><span class="s1">: </span><span class="s4">50</span><span class="s1">% </span><span class="s4">50</span><span class="s1">% </span><span class="s4">0 0</span><span class="s1">;</span>
+      <span class="s2">box-shadow</span><span class="s1">: </span><span class="s4">0 0 10</span><span class="s3">px </span><span class="s0">rgba</span><span class="s1">(</span><span class="s4">255</span><span class="s1">, </span><span class="s4">77</span><span class="s1">, </span><span class="s4">109</span><span class="s1">, </span><span class="s4">0.6</span><span class="s1">);</span>
+    <span class="s1">}</span>
+    <span class="s1">.</span><span class="s0">love-heart</span><span class="s1">::</span><span class="s0">before </span><span class="s1">{ </span><span class="s2">transform</span><span class="s1">: </span><span class="s0">rotate</span><span class="s1">(-</span><span class="s4">45</span><span class="s3">deg</span><span class="s1">); </span><span class="s2">left</span><span class="s1">: </span><span class="s4">6</span><span class="s3">px</span><span class="s1">; }</span>
+    <span class="s1">.</span><span class="s0">love-heart</span><span class="s1">::</span><span class="s0">after </span><span class="s1">{ </span><span class="s2">transform</span><span class="s1">: </span><span class="s0">rotate</span><span class="s1">(</span><span class="s4">45</span><span class="s3">deg</span><span class="s1">); </span><span class="s2">left</span><span class="s1">: </span><span class="s4">0</span><span class="s1">; }</span>
+
+    <span class="s1">.</span><span class="s0">show-love </span><span class="s1">.</span><span class="s0">love-heart </span><span class="s1">{</span>
+      <span class="s2">opacity</span><span class="s1">: </span><span class="s4">1</span><span class="s1">;</span>
+      <span class="s2">animation</span><span class="s1">: </span><span class="s3">heartBeat </span><span class="s4">0.8</span><span class="s3">s ease-in-out infinite</span><span class="s1">;</span>
+    <span class="s1">}</span>
+    <span class="s7">@keyframes </span><span class="s0">heartBeat </span><span class="s1">{</span>
+      <span class="s0">0%</span><span class="s1">, </span><span class="s0">100% </span><span class="s1">{ </span><span class="s2">transform</span><span class="s1">: </span><span class="s0">scale</span><span class="s1">(</span><span class="s4">1</span><span class="s1">); }</span>
+      <span class="s0">50% </span><span class="s1">{ </span><span class="s2">transform</span><span class="s1">: </span><span class="s0">scale</span><span class="s1">(</span><span class="s4">1.2</span><span class="s1">); }</span>
+    <span class="s1">}</span>
+
+    <span class="s6">/* Tail */</span>
+    <span class="s1">.</span><span class="s0">tail </span><span class="s1">{</span>
+      <span class="s2">position</span><span class="s1">: </span><span class="s3">absolute</span><span class="s1">;</span>
+      <span class="s2">width</span><span class="s1">: </span><span class="s4">22</span><span class="s3">px</span><span class="s1">;</span>
+      <span class="s2">height</span><span class="s1">: </span><span class="s4">80</span><span class="s3">px</span><span class="s1">;</span>
+      <span class="s2">background</span><span class="s1">: </span><span class="s0">linear-gradient</span><span class="s1">(</span><span class="s3">to bottom</span><span class="s1">, </span><span class="s5">#e8a87c</span><span class="s1">, </span><span class="s5">#c8895a</span><span class="s1">);</span>
+      <span class="s2">border-radius</span><span class="s1">: </span><span class="s4">50</span><span class="s1">%;</span>
+      <span class="s2">right</span><span class="s1">: </span><span class="s4">15</span><span class="s3">px</span><span class="s1">;</span>
+      <span class="s2">bottom</span><span class="s1">: </span><span class="s4">60</span><span class="s3">px</span><span class="s1">;</span>
+      <span class="s2">transform</span><span class="s1">: </span><span class="s0">rotate</span><span class="s1">(-</span><span class="s4">30</span><span class="s3">deg</span><span class="s1">);</span>
+      <span class="s2">transform-origin</span><span class="s1">: </span><span class="s3">bottom center</span><span class="s1">;</span>
+      <span class="s2">animation</span><span class="s1">: </span><span class="s3">tailWag </span><span class="s4">2</span><span class="s3">s ease-in-out infinite</span><span class="s1">;</span>
+      <span class="s2">z-index</span><span class="s1">: </span><span class="s4">0</span><span class="s1">;</span>
+    <span class="s1">}</span>
+    <span class="s7">@keyframes </span><span class="s0">tailWag </span><span class="s1">{</span>
+      <span class="s0">0%</span><span class="s1">, </span><span class="s0">100% </span><span class="s1">{ </span><span class="s2">transform</span><span class="s1">: </span><span class="s0">rotate</span><span class="s1">(-</span><span class="s4">30</span><span class="s3">deg</span><span class="s1">); }</span>
+      <span class="s0">50% </span><span class="s1">{ </span><span class="s2">transform</span><span class="s1">: </span><span class="s0">rotate</span><span class="s1">(-</span><span class="s4">50</span><span class="s3">deg</span><span class="s1">); }</span>
+    <span class="s1">}</span>
+
+    <span class="s6">/* HEAD */</span>
+    <span class="s1">.</span><span class="s0">head </span><span class="s1">{</span>
+      <span class="s2">position</span><span class="s1">: </span><span class="s3">absolute</span><span class="s1">;</span>
+      <span class="s2">width</span><span class="s1">: </span><span class="s4">170</span><span class="s3">px</span><span class="s1">;</span>
+      <span class="s2">height</span><span class="s1">: </span><span class="s4">150</span><span class="s3">px</span><span class="s1">;</span>
+      <span class="s2">background</span><span class="s1">: </span><span class="s0">radial-gradient</span><span class="s1">(</span><span class="s3">ellipse at </span><span class="s4">35</span><span class="s1">% </span><span class="s4">30</span><span class="s1">%, </span><span class="s5">#ffe0bd </span><span class="s4">0</span><span class="s1">%, </span><span class="s5">#ffd4a3 </span><span class="s4">40</span><span class="s1">%, </span><span class="s5">#e8a87c </span><span class="s4">90</span><span class="s1">%);</span>
+      <span class="s2">border-radius</span><span class="s1">: </span><span class="s4">50</span><span class="s1">% </span><span class="s4">50</span><span class="s1">% </span><span class="s4">45</span><span class="s1">% </span><span class="s4">45</span><span class="s1">% / </span><span class="s4">55</span><span class="s1">% </span><span class="s4">55</span><span class="s1">% </span><span class="s4">45</span><span class="s1">% </span><span class="s4">45</span><span class="s1">%;</span>
+      <span class="s2">top</span><span class="s1">: </span><span class="s4">15</span><span class="s3">px</span><span class="s1">;</span>
+      <span class="s2">left</span><span class="s1">: </span><span class="s4">50</span><span class="s1">%;</span>
+      <span class="s2">transform</span><span class="s1">: </span><span class="s0">translateX</span><span class="s1">(-</span><span class="s4">50</span><span class="s1">%);</span>
+      <span class="s2">box-shadow</span><span class="s1">: </span><span class="s3">inset </span><span class="s1">-</span><span class="s4">12</span><span class="s3">px </span><span class="s1">-</span><span class="s4">8</span><span class="s3">px </span><span class="s4">25</span><span class="s3">px </span><span class="s0">rgba</span><span class="s1">(</span><span class="s4">120</span><span class="s1">, </span><span class="s4">60</span><span class="s1">, </span><span class="s4">20</span><span class="s1">, </span><span class="s4">0.25</span><span class="s1">),</span>
+      <span class="s3">inset </span><span class="s4">8</span><span class="s3">px </span><span class="s4">5</span><span class="s3">px </span><span class="s4">18</span><span class="s3">px </span><span class="s0">rgba</span><span class="s1">(</span><span class="s4">255</span><span class="s1">, </span><span class="s4">230</span><span class="s1">, </span><span class="s4">200</span><span class="s1">, </span><span class="s4">0.6</span><span class="s1">);</span>
+      <span class="s2">z-index</span><span class="s1">: </span><span class="s4">3</span><span class="s1">;</span>
+    <span class="s1">}</span>
+
+    <span class="s6">/* Forehead stripes */</span>
+    <span class="s1">.</span><span class="s0">head</span><span class="s1">::</span><span class="s0">before </span><span class="s1">{</span>
+      <span class="s2">content</span><span class="s1">: </span><span class="s3">''</span><span class="s1">;</span>
+      <span class="s2">position</span><span class="s1">: </span><span class="s3">absolute</span><span class="s1">;</span>
+      <span class="s2">top</span><span class="s1">: </span><span class="s4">8</span><span class="s3">px</span><span class="s1">;</span>
+      <span class="s2">left</span><span class="s1">: </span><span class="s4">50</span><span class="s1">%;</span>
+      <span class="s2">transform</span><span class="s1">: </span><span class="s0">translateX</span><span class="s1">(-</span><span class="s4">50</span><span class="s1">%);</span>
+      <span class="s2">width</span><span class="s1">: </span><span class="s4">60</span><span class="s3">px</span><span class="s1">;</span>
+      <span class="s2">height</span><span class="s1">: </span><span class="s4">30</span><span class="s3">px</span><span class="s1">;</span>
+      <span class="s2">background</span><span class="s1">:</span>
+        <span class="s0">linear-gradient</span><span class="s1">(</span><span class="s3">to right</span><span class="s1">, </span><span class="s3">transparent </span><span class="s4">20</span><span class="s1">%, </span><span class="s0">rgba</span><span class="s1">(</span><span class="s4">140</span><span class="s1">, </span><span class="s4">80</span><span class="s1">, </span><span class="s4">40</span><span class="s1">, </span><span class="s4">0.3</span><span class="s1">) </span><span class="s4">30</span><span class="s1">%, </span><span class="s3">transparent </span><span class="s4">40</span><span class="s1">%, </span><span class="s3">transparent </span><span class="s4">60</span><span class="s1">%, </span><span class="s0">rgba</span><span class="s1">(</span><span class="s4">140</span><span class="s1">, </span><span class="s4">80</span><span class="s1">, </span><span class="s4">40</span><span class="s1">, </span><span class="s4">0.3</span><span class="s1">) </span><span class="s4">70</span><span class="s1">%, </span><span class="s3">transparent </span><span class="s4">80</span><span class="s1">%);</span>
+      <span class="s2">border-radius</span><span class="s1">: </span><span class="s4">50</span><span class="s1">%;</span>
+    <span class="s1">}</span>
+
+    <span class="s6">/* EARS */</span>
+    <span class="s1">.</span><span class="s0">ear </span><span class="s1">{</span>
+      <span class="s2">position</span><span class="s1">: </span><span class="s3">absolute</span><span class="s1">;</span>
+      <span class="s2">width</span><span class="s1">: </span><span class="s4">0</span><span class="s1">;</span>
+      <span class="s2">height</span><span class="s1">: </span><span class="s4">0</span><span class="s1">;</span>
+      <span class="s2">border-left</span><span class="s1">: </span><span class="s4">28</span><span class="s3">px solid transparent</span><span class="s1">;</span>
+      <span class="s2">border-right</span><span class="s1">: </span><span class="s4">28</span><span class="s3">px solid transparent</span><span class="s1">;</span>
+      <span class="s2">border-bottom</span><span class="s1">: </span><span class="s4">50</span><span class="s3">px solid </span><span class="s5">#e8a87c</span><span class="s1">;</span>
+      <span class="s2">top</span><span class="s1">: -</span><span class="s4">5</span><span class="s3">px</span><span class="s1">;</span>
+      <span class="s2">z-index</span><span class="s1">: </span><span class="s4">2</span><span class="s1">;</span>
+      <span class="s2">filter</span><span class="s1">: </span><span class="s0">drop-shadow</span><span class="s1">(</span><span class="s4">2</span><span class="s3">px </span><span class="s1">-</span><span class="s4">2</span><span class="s3">px </span><span class="s4">3</span><span class="s3">px </span><span class="s0">rgba</span><span class="s1">(</span><span class="s4">0</span><span class="s1">,</span><span class="s4">0</span><span class="s1">,</span><span class="s4">0</span><span class="s1">,</span><span class="s4">0.15</span><span class="s1">));</span>
+    <span class="s1">}</span>
+    <span class="s1">.</span><span class="s0">ear</span><span class="s1">.</span><span class="s0">left </span><span class="s1">{ </span><span class="s2">left</span><span class="s1">: </span><span class="s4">30</span><span class="s3">px</span><span class="s1">; </span><span class="s2">transform</span><span class="s1">: </span><span class="s0">rotate</span><span class="s1">(-</span><span class="s4">25</span><span class="s3">deg</span><span class="s1">); }</span>
+    <span class="s1">.</span><span class="s0">ear</span><span class="s1">.</span><span class="s0">right </span><span class="s1">{ </span><span class="s2">right</span><span class="s1">: </span><span class="s4">30</span><span class="s3">px</span><span class="s1">; </span><span class="s2">transform</span><span class="s1">: </span><span class="s0">rotate</span><span class="s1">(</span><span class="s4">25</span><span class="s3">deg</span><span class="s1">); }</span>
+
+    <span class="s1">.</span><span class="s0">ear-inner </span><span class="s1">{</span>
+      <span class="s2">position</span><span class="s1">: </span><span class="s3">absolute</span><span class="s1">;</span>
+      <span class="s2">width</span><span class="s1">: </span><span class="s4">0</span><span class="s1">;</span>
+      <span class="s2">height</span><span class="s1">: </span><span class="s4">0</span><span class="s1">;</span>
+      <span class="s2">border-left</span><span class="s1">: </span><span class="s4">14</span><span class="s3">px solid transparent</span><span class="s1">;</span>
+      <span class="s2">border-right</span><span class="s1">: </span><span class="s4">14</span><span class="s3">px solid transparent</span><span class="s1">;</span>
+      <span class="s2">border-bottom</span><span class="s1">: </span><span class="s4">28</span><span class="s3">px solid </span><span class="s5">#ffb3b3</span><span class="s1">;</span>
+      <span class="s2">top</span><span class="s1">: </span><span class="s4">18</span><span class="s3">px</span><span class="s1">;</span>
+    <span class="s1">}</span>
+    <span class="s1">.</span><span class="s0">ear</span><span class="s1">.</span><span class="s0">left </span><span class="s1">.</span><span class="s0">ear-inner </span><span class="s1">{ </span><span class="s2">left</span><span class="s1">: -</span><span class="s4">14</span><span class="s3">px</span><span class="s1">; }</span>
+    <span class="s1">.</span><span class="s0">ear</span><span class="s1">.</span><span class="s0">right </span><span class="s1">.</span><span class="s0">ear-inner </span><span class="s1">{ </span><span class="s2">right</span><span class="s1">: -</span><span class="s4">14</span><span class="s3">px</span><span class="s1">; }</span>
+
+    <span class="s1">.</span><span class="s0">upset </span><span class="s1">.</span><span class="s0">ear </span><span class="s1">{ </span><span class="s2">transform</span><span class="s1">: </span><span class="s0">rotate</span><span class="s1">(-</span><span class="s4">25</span><span class="s3">deg</span><span class="s1">) </span><span class="s0">translateY</span><span class="s1">(</span><span class="s4">8</span><span class="s3">px</span><span class="s1">) </span><span class="s0">scaleY</span><span class="s1">(</span><span class="s4">0.7</span><span class="s1">); }</span>
+    <span class="s1">.</span><span class="s0">upset </span><span class="s1">.</span><span class="s0">ear</span><span class="s1">.</span><span class="s0">right </span><span class="s1">{ </span><span class="s2">transform</span><span class="s1">: </span><span class="s0">rotate</span><span class="s1">(</span><span class="s4">25</span><span class="s3">deg</span><span class="s1">) </span><span class="s0">translateY</span><span class="s1">(</span><span class="s4">8</span><span class="s3">px</span><span class="s1">) </span><span class="s0">scaleY</span><span class="s1">(</span><span class="s4">0.7</span><span class="s1">); }</span>
+
+    <span class="s6">/* EYES */</span>
+    <span class="s1">.</span><span class="s0">eye-wrap </span><span class="s1">{</span>
+      <span class="s2">position</span><span class="s1">: </span><span class="s3">absolute</span><span class="s1">;</span>
+      <span class="s2">width</span><span class="s1">: </span><span class="s4">38</span><span class="s3">px</span><span class="s1">;</span>
+      <span class="s2">height</span><span class="s1">: </span><span class="s4">42</span><span class="s3">px</span><span class="s1">;</span>
+      <span class="s2">top</span><span class="s1">: </span><span class="s4">55</span><span class="s3">px</span><span class="s1">;</span>
+      <span class="s2">z-index</span><span class="s1">: </span><span class="s4">4</span><span class="s1">;</span>
+    <span class="s1">}</span>
+    <span class="s1">.</span><span class="s0">eye-wrap</span><span class="s1">.</span><span class="s0">left </span><span class="s1">{ </span><span class="s2">left</span><span class="s1">: </span><span class="s4">35</span><span class="s3">px</span><span class="s1">; }</span>
+    <span class="s1">.</span><span class="s0">eye-wrap</span><span class="s1">.</span><span class="s0">right </span><span class="s1">{ </span><span class="s2">right</span><span class="s1">: </span><span class="s4">35</span><span class="s3">px</span><span class="s1">; }</span>
+
+    <span class="s1">.</span><span class="s0">eye </span><span class="s1">{</span>
+      <span class="s2">width</span><span class="s1">: </span><span class="s4">100</span><span class="s1">%;</span>
+      <span class="s2">height</span><span class="s1">: </span><span class="s4">100</span><span class="s1">%;</span>
+      <span class="s2">background</span><span class="s1">: </span><span class="s0">radial-gradient</span><span class="s1">(</span><span class="s3">circle at </span><span class="s4">50</span><span class="s1">% </span><span class="s4">50</span><span class="s1">%, </span><span class="s5">#4caf50 </span><span class="s4">0</span><span class="s1">%, </span><span class="s5">#2e7d32 </span><span class="s4">60</span><span class="s1">%, </span><span class="s5">#1b5e20 </span><span class="s4">100</span><span class="s1">%);</span>
+      <span class="s2">border-radius</span><span class="s1">: </span><span class="s4">50</span><span class="s1">%;</span>
+      <span class="s2">position</span><span class="s1">: </span><span class="s3">relative</span><span class="s1">;</span>
+      <span class="s2">box-shadow</span><span class="s1">: </span><span class="s3">inset </span><span class="s1">-</span><span class="s4">2</span><span class="s3">px </span><span class="s1">-</span><span class="s4">2</span><span class="s3">px </span><span class="s4">4</span><span class="s3">px </span><span class="s0">rgba</span><span class="s1">(</span><span class="s4">0</span><span class="s1">,</span><span class="s4">0</span><span class="s1">,</span><span class="s4">0</span><span class="s1">,</span><span class="s4">0.4</span><span class="s1">);</span>
+      <span class="s2">overflow</span><span class="s1">: </span><span class="s3">hidden</span><span class="s1">;</span>
+      <span class="s2">transition</span><span class="s1">: </span><span class="s3">all </span><span class="s4">0.3</span><span class="s3">s</span><span class="s1">;</span>
+    <span class="s1">}</span>
+
+    <span class="s6">/* Pupil */</span>
+    <span class="s1">.</span><span class="s0">eye</span><span class="s1">::</span><span class="s0">before </span><span class="s1">{</span>
+      <span class="s2">content</span><span class="s1">: </span><span class="s3">''</span><span class="s1">;</span>
+      <span class="s2">position</span><span class="s1">: </span><span class="s3">absolute</span><span class="s1">;</span>
+      <span class="s2">width</span><span class="s1">: </span><span class="s4">10</span><span class="s3">px</span><span class="s1">;</span>
+      <span class="s2">height</span><span class="s1">: </span><span class="s4">28</span><span class="s3">px</span><span class="s1">;</span>
+      <span class="s2">background</span><span class="s1">: </span><span class="s5">#1a1a1a</span><span class="s1">;</span>
+      <span class="s2">border-radius</span><span class="s1">: </span><span class="s4">50</span><span class="s1">%;</span>
+      <span class="s2">left</span><span class="s1">: </span><span class="s4">50</span><span class="s1">%;</span>
+      <span class="s2">top</span><span class="s1">: </span><span class="s4">50</span><span class="s1">%;</span>
+      <span class="s2">transform</span><span class="s1">: </span><span class="s0">translate</span><span class="s1">(-</span><span class="s4">50</span><span class="s1">%, -</span><span class="s4">50</span><span class="s1">%);</span>
+    <span class="s1">}</span>
+
+    <span class="s6">/* Eye shine */</span>
+    <span class="s1">.</span><span class="s0">eye</span><span class="s1">::</span><span class="s0">after </span><span class="s1">{</span>
+      <span class="s2">content</span><span class="s1">: </span><span class="s3">''</span><span class="s1">;</span>
+      <span class="s2">position</span><span class="s1">: </span><span class="s3">absolute</span><span class="s1">;</span>
+      <span class="s2">width</span><span class="s1">: </span><span class="s4">10</span><span class="s3">px</span><span class="s1">;</span>
+      <span class="s2">height</span><span class="s1">: </span><span class="s4">12</span><span class="s3">px</span><span class="s1">;</span>
+      <span class="s2">background</span><span class="s1">: </span><span class="s3">white</span><span class="s1">;</span>
+      <span class="s2">border-radius</span><span class="s1">: </span><span class="s4">50</span><span class="s1">%;</span>
+      <span class="s2">top</span><span class="s1">: </span><span class="s4">6</span><span class="s3">px</span><span class="s1">;</span>
+      <span class="s2">left</span><span class="s1">: </span><span class="s4">8</span><span class="s3">px</span><span class="s1">;</span>
+      <span class="s2">box-shadow</span><span class="s1">: </span><span class="s4">6</span><span class="s3">px </span><span class="s4">14</span><span class="s3">px </span><span class="s4">0 </span><span class="s1">-</span><span class="s4">3</span><span class="s3">px </span><span class="s0">rgba</span><span class="s1">(</span><span class="s4">255</span><span class="s1">,</span><span class="s4">255</span><span class="s1">,</span><span class="s4">255</span><span class="s1">,</span><span class="s4">0.7</span><span class="s1">);</span>
+    <span class="s1">}</span>
+
+    <span class="s6">/* Crying eyes */</span>
+    <span class="s1">.</span><span class="s0">crying </span><span class="s1">.</span><span class="s0">eye </span><span class="s1">{</span>
+      <span class="s2">height</span><span class="s1">: </span><span class="s4">18</span><span class="s3">px</span><span class="s1">;</span>
+      <span class="s2">background</span><span class="s1">: </span><span class="s5">#2c2c2c</span><span class="s1">;</span>
+      <span class="s2">border-radius</span><span class="s1">: </span><span class="s4">50</span><span class="s1">% </span><span class="s4">50</span><span class="s1">% </span><span class="s4">0 0 </span><span class="s1">/ </span><span class="s4">100</span><span class="s1">% </span><span class="s4">100</span><span class="s1">% </span><span class="s4">0 0</span><span class="s1">;</span>
+      <span class="s2">margin-top</span><span class="s1">: </span><span class="s4">12</span><span class="s3">px</span><span class="s1">;</span>
+    <span class="s1">}</span>
+    <span class="s1">.</span><span class="s0">crying </span><span class="s1">.</span><span class="s0">eye</span><span class="s1">::</span><span class="s0">before</span><span class="s1">, .</span><span class="s0">crying </span><span class="s1">.</span><span class="s0">eye</span><span class="s1">::</span><span class="s0">after </span><span class="s1">{ </span><span class="s2">display</span><span class="s1">: </span><span class="s3">none</span><span class="s1">; }</span>
+
+    <span class="s6">/* Upset eyes (closed/turned away) */</span>
+    <span class="s1">.</span><span class="s0">upset </span><span class="s1">.</span><span class="s0">eye </span><span class="s1">{</span>
+      <span class="s2">height</span><span class="s1">: </span><span class="s4">6</span><span class="s3">px</span><span class="s1">;</span>
+      <span class="s2">background</span><span class="s1">: </span><span class="s5">#2c2c2c</span><span class="s1">;</span>
+      <span class="s2">border-radius</span><span class="s1">: </span><span class="s4">50</span><span class="s1">%;</span>
+      <span class="s2">margin-top</span><span class="s1">: </span><span class="s4">18</span><span class="s3">px</span><span class="s1">;</span>
+    <span class="s1">}</span>
+    <span class="s1">.</span><span class="s0">upset </span><span class="s1">.</span><span class="s0">eye</span><span class="s1">::</span><span class="s0">before</span><span class="s1">, .</span><span class="s0">upset </span><span class="s1">.</span><span class="s0">eye</span><span class="s1">::</span><span class="s0">after </span><span class="s1">{ </span><span class="s2">display</span><span class="s1">: </span><span class="s3">none</span><span class="s1">; }</span>
+
+    <span class="s6">/* TEARS */</span>
+    <span class="s1">.</span><span class="s0">tear </span><span class="s1">{</span>
+      <span class="s2">position</span><span class="s1">: </span><span class="s3">absolute</span><span class="s1">;</span>
+      <span class="s2">width</span><span class="s1">: </span><span class="s4">14</span><span class="s3">px</span><span class="s1">;</span>
+      <span class="s2">height</span><span class="s1">: </span><span class="s4">20</span><span class="s3">px</span><span class="s1">;</span>
+      <span class="s2">background</span><span class="s1">: </span><span class="s0">linear-gradient</span><span class="s1">(</span><span class="s3">to bottom</span><span class="s1">, </span><span class="s5">#a8e0ff</span><span class="s1">, </span><span class="s5">#5fb8e8</span><span class="s1">);</span>
+      <span class="s2">border-radius</span><span class="s1">: </span><span class="s4">50</span><span class="s1">% </span><span class="s4">50</span><span class="s1">% </span><span class="s4">50</span><span class="s1">% </span><span class="s4">50</span><span class="s1">% / </span><span class="s4">70</span><span class="s1">% </span><span class="s4">70</span><span class="s1">% </span><span class="s4">30</span><span class="s1">% </span><span class="s4">30</span><span class="s1">%;</span>
+      <span class="s2">top</span><span class="s1">: </span><span class="s4">95</span><span class="s3">px</span><span class="s1">;</span>
+      <span class="s2">opacity</span><span class="s1">: </span><span class="s4">0</span><span class="s1">;</span>
+      <span class="s2">z-index</span><span class="s1">: </span><span class="s4">5</span><span class="s1">;</span>
+      <span class="s2">box-shadow</span><span class="s1">: </span><span class="s3">inset </span><span class="s1">-</span><span class="s4">2</span><span class="s3">px </span><span class="s1">-</span><span class="s4">2</span><span class="s3">px </span><span class="s4">4</span><span class="s3">px </span><span class="s0">rgba</span><span class="s1">(</span><span class="s4">0</span><span class="s1">,</span><span class="s4">0</span><span class="s1">,</span><span class="s4">0</span><span class="s1">,</span><span class="s4">0.15</span><span class="s1">),</span>
+      <span class="s4">0 0 6</span><span class="s3">px </span><span class="s0">rgba</span><span class="s1">(</span><span class="s4">95</span><span class="s1">, </span><span class="s4">184</span><span class="s1">, </span><span class="s4">232</span><span class="s1">, </span><span class="s4">0.5</span><span class="s1">);</span>
+    <span class="s1">}</span>
+    <span class="s1">.</span><span class="s0">tear</span><span class="s1">.</span><span class="s0">left </span><span class="s1">{ </span><span class="s2">left</span><span class="s1">: </span><span class="s4">45</span><span class="s3">px</span><span class="s1">; }</span>
+    <span class="s1">.</span><span class="s0">tear</span><span class="s1">.</span><span class="s0">right </span><span class="s1">{ </span><span class="s2">right</span><span class="s1">: </span><span class="s4">45</span><span class="s3">px</span><span class="s1">; }</span>
+
+    <span class="s1">.</span><span class="s0">crying </span><span class="s1">.</span><span class="s0">tear </span><span class="s1">{</span>
+      <span class="s2">animation</span><span class="s1">: </span><span class="s3">tearFall </span><span class="s4">1.2</span><span class="s3">s ease-in infinite</span><span class="s1">;</span>
+    <span class="s1">}</span>
+    <span class="s7">@keyframes </span><span class="s0">tearFall </span><span class="s1">{</span>
+      <span class="s0">0% </span><span class="s1">{ </span><span class="s2">opacity</span><span class="s1">: </span><span class="s4">0</span><span class="s1">; </span><span class="s2">transform</span><span class="s1">: </span><span class="s0">translateY</span><span class="s1">(</span><span class="s4">0</span><span class="s1">) </span><span class="s0">scale</span><span class="s1">(</span><span class="s4">0.4</span><span class="s1">); }</span>
+      <span class="s0">25% </span><span class="s1">{ </span><span class="s2">opacity</span><span class="s1">: </span><span class="s4">1</span><span class="s1">; </span><span class="s2">transform</span><span class="s1">: </span><span class="s0">translateY</span><span class="s1">(</span><span class="s4">0</span><span class="s1">) </span><span class="s0">scale</span><span class="s1">(</span><span class="s4">1</span><span class="s1">); }</span>
+      <span class="s0">100% </span><span class="s1">{ </span><span class="s2">opacity</span><span class="s1">: </span><span class="s4">0</span><span class="s1">; </span><span class="s2">transform</span><span class="s1">: </span><span class="s0">translateY</span><span class="s1">(</span><span class="s4">70</span><span class="s3">px</span><span class="s1">) </span><span class="s0">scale</span><span class="s1">(</span><span class="s4">1.3</span><span class="s1">); }</span>
+    <span class="s1">}</span>
+
+    <span class="s6">/* NOSE */</span>
+    <span class="s1">.</span><span class="s0">nose </span><span class="s1">{</span>
+      <span class="s2">position</span><span class="s1">: </span><span class="s3">absolute</span><span class="s1">;</span>
+      <span class="s2">width</span><span class="s1">: </span><span class="s4">16</span><span class="s3">px</span><span class="s1">;</span>
+      <span class="s2">height</span><span class="s1">: </span><span class="s4">12</span><span class="s3">px</span><span class="s1">;</span>
+      <span class="s2">background</span><span class="s1">: </span><span class="s0">linear-gradient</span><span class="s1">(</span><span class="s4">135</span><span class="s3">deg</span><span class="s1">, </span><span class="s5">#ff8fa3</span><span class="s1">, </span><span class="s5">#d63d5c</span><span class="s1">);</span>
+      <span class="s2">border-radius</span><span class="s1">: </span><span class="s4">50</span><span class="s1">% </span><span class="s4">50</span><span class="s1">% </span><span class="s4">50</span><span class="s1">% </span><span class="s4">50</span><span class="s1">% / </span><span class="s4">60</span><span class="s1">% </span><span class="s4">60</span><span class="s1">% </span><span class="s4">40</span><span class="s1">% </span><span class="s4">40</span><span class="s1">%;</span>
+      <span class="s2">top</span><span class="s1">: </span><span class="s4">100</span><span class="s3">px</span><span class="s1">;</span>
+      <span class="s2">left</span><span class="s1">: </span><span class="s4">50</span><span class="s1">%;</span>
+      <span class="s2">transform</span><span class="s1">: </span><span class="s0">translateX</span><span class="s1">(-</span><span class="s4">50</span><span class="s1">%);</span>
+      <span class="s2">z-index</span><span class="s1">: </span><span class="s4">4</span><span class="s1">;</span>
+      <span class="s2">box-shadow</span><span class="s1">: </span><span class="s3">inset </span><span class="s1">-</span><span class="s4">1</span><span class="s3">px </span><span class="s1">-</span><span class="s4">1</span><span class="s3">px </span><span class="s4">2</span><span class="s3">px </span><span class="s0">rgba</span><span class="s1">(</span><span class="s4">0</span><span class="s1">,</span><span class="s4">0</span><span class="s1">,</span><span class="s4">0</span><span class="s1">,</span><span class="s4">0.3</span><span class="s1">);</span>
+    <span class="s1">}</span>
+
+    <span class="s6">/* MOUTH */</span>
+    <span class="s1">.</span><span class="s0">mouth </span><span class="s1">{</span>
+      <span class="s2">position</span><span class="s1">: </span><span class="s3">absolute</span><span class="s1">;</span>
+      <span class="s2">top</span><span class="s1">: </span><span class="s4">115</span><span class="s3">px</span><span class="s1">;</span>
+      <span class="s2">left</span><span class="s1">: </span><span class="s4">50</span><span class="s1">%;</span>
+      <span class="s2">transform</span><span class="s1">: </span><span class="s0">translateX</span><span class="s1">(-</span><span class="s4">50</span><span class="s1">%);</span>
+      <span class="s2">width</span><span class="s1">: </span><span class="s4">30</span><span class="s3">px</span><span class="s1">;</span>
+      <span class="s2">height</span><span class="s1">: </span><span class="s4">16</span><span class="s3">px</span><span class="s1">;</span>
+      <span class="s2">z-index</span><span class="s1">: </span><span class="s4">4</span><span class="s1">;</span>
+    <span class="s1">}</span>
+
+    <span class="s1">.</span><span class="s0">mouth</span><span class="s1">::</span><span class="s0">before</span><span class="s1">, .</span><span class="s0">mouth</span><span class="s1">::</span><span class="s0">after </span><span class="s1">{</span>
+      <span class="s2">content</span><span class="s1">: </span><span class="s3">''</span><span class="s1">;</span>
+      <span class="s2">position</span><span class="s1">: </span><span class="s3">absolute</span><span class="s1">;</span>
+      <span class="s2">width</span><span class="s1">: </span><span class="s4">13</span><span class="s3">px</span><span class="s1">;</span>
+      <span class="s2">height</span><span class="s1">: </span><span class="s4">9</span><span class="s3">px</span><span class="s1">;</span>
+      <span class="s2">border</span><span class="s1">: </span><span class="s4">2</span><span class="s3">px solid </span><span class="s5">#2c2c2c</span><span class="s1">;</span>
+      <span class="s2">border-top</span><span class="s1">: </span><span class="s3">none</span><span class="s1">;</span>
+      <span class="s2">border-right</span><span class="s1">: </span><span class="s3">none</span><span class="s1">;</span>
+      <span class="s2">border-radius</span><span class="s1">: </span><span class="s4">0 0 0 14</span><span class="s3">px</span><span class="s1">;</span>
+      <span class="s2">top</span><span class="s1">: </span><span class="s4">0</span><span class="s1">;</span>
+    <span class="s1">}</span>
+    <span class="s1">.</span><span class="s0">mouth</span><span class="s1">::</span><span class="s0">before </span><span class="s1">{ </span><span class="s2">left</span><span class="s1">: </span><span class="s4">0</span><span class="s1">; }</span>
+    <span class="s1">.</span><span class="s0">mouth</span><span class="s1">::</span><span class="s0">after </span><span class="s1">{ </span><span class="s2">right</span><span class="s1">: </span><span class="s4">0</span><span class="s1">; </span><span class="s2">transform</span><span class="s1">: </span><span class="s0">scaleX</span><span class="s1">(-</span><span class="s4">1</span><span class="s1">); }</span>
+
+    <span class="s6">/* Crying mouth */</span>
+    <span class="s1">.</span><span class="s0">crying </span><span class="s1">.</span><span class="s0">mouth </span><span class="s1">{</span>
+      <span class="s2">width</span><span class="s1">: </span><span class="s4">22</span><span class="s3">px</span><span class="s1">;</span>
+      <span class="s2">height</span><span class="s1">: </span><span class="s4">18</span><span class="s3">px</span><span class="s1">;</span>
+      <span class="s2">background</span><span class="s1">: </span><span class="s5">#2c2c2c</span><span class="s1">;</span>
+      <span class="s2">border-radius</span><span class="s1">: </span><span class="s4">50</span><span class="s1">% </span><span class="s4">50</span><span class="s1">% </span><span class="s4">50</span><span class="s1">% </span><span class="s4">50</span><span class="s1">% / </span><span class="s4">30</span><span class="s1">% </span><span class="s4">30</span><span class="s1">% </span><span class="s4">70</span><span class="s1">% </span><span class="s4">70</span><span class="s1">%;</span>
+      <span class="s2">top</span><span class="s1">: </span><span class="s4">118</span><span class="s3">px</span><span class="s1">;</span>
+    <span class="s1">}</span>
+    <span class="s1">.</span><span class="s0">crying </span><span class="s1">.</span><span class="s0">mouth</span><span class="s1">::</span><span class="s0">before</span><span class="s1">, .</span><span class="s0">crying </span><span class="s1">.</span><span class="s0">mouth</span><span class="s1">::</span><span class="s0">after </span><span class="s1">{ </span><span class="s2">display</span><span class="s1">: </span><span class="s3">none</span><span class="s1">; }</span>
+
+    <span class="s6">/* Upset mouth */</span>
+    <span class="s1">.</span><span class="s0">upset </span><span class="s1">.</span><span class="s0">mouth </span><span class="s1">{</span>
+      <span class="s2">width</span><span class="s1">: </span><span class="s4">20</span><span class="s3">px</span><span class="s1">;</span>
+      <span class="s2">height</span><span class="s1">: </span><span class="s4">4</span><span class="s3">px</span><span class="s1">;</span>
+      <span class="s2">background</span><span class="s1">: </span><span class="s5">#2c2c2c</span><span class="s1">;</span>
+      <span class="s2">border-radius</span><span class="s1">: </span><span class="s4">0</span><span class="s1">;</span>
+      <span class="s2">top</span><span class="s1">: </span><span class="s4">120</span><span class="s3">px</span><span class="s1">;</span>
+    <span class="s1">}</span>
+    <span class="s1">.</span><span class="s0">upset </span><span class="s1">.</span><span class="s0">mouth</span><span class="s1">::</span><span class="s0">before</span><span class="s1">, .</span><span class="s0">upset </span><span class="s1">.</span><span class="s0">mouth</span><span class="s1">::</span><span class="s0">after </span><span class="s1">{ </span><span class="s2">display</span><span class="s1">: </span><span class="s3">none</span><span class="s1">; }</span>
+
+    <span class="s6">/* CHEEKS */</span>
+    <span class="s1">.</span><span class="s0">cheek </span><span class="s1">{</span>
+      <span class="s2">position</span><span class="s1">: </span><span class="s3">absolute</span><span class="s1">;</span>
+      <span class="s2">width</span><span class="s1">: </span><span class="s4">22</span><span class="s3">px</span><span class="s1">;</span>
+      <span class="s2">height</span><span class="s1">: </span><span class="s4">14</span><span class="s3">px</span><span class="s1">;</span>
+      <span class="s2">background</span><span class="s1">: </span><span class="s0">radial-gradient</span><span class="s1">(</span><span class="s3">ellipse</span><span class="s1">, </span><span class="s5">#ffb3b3</span><span class="s1">, </span><span class="s3">transparent </span><span class="s4">70</span><span class="s1">%);</span>
+      <span class="s2">border-radius</span><span class="s1">: </span><span class="s4">50</span><span class="s1">%;</span>
+      <span class="s2">top</span><span class="s1">: </span><span class="s4">100</span><span class="s3">px</span><span class="s1">;</span>
+      <span class="s2">z-index</span><span class="s1">: </span><span class="s4">3</span><span class="s1">;</span>
+    <span class="s1">}</span>
+    <span class="s1">.</span><span class="s0">cheek</span><span class="s1">.</span><span class="s0">left </span><span class="s1">{ </span><span class="s2">left</span><span class="s1">: </span><span class="s4">18</span><span class="s3">px</span><span class="s1">; }</span>
+    <span class="s1">.</span><span class="s0">cheek</span><span class="s1">.</span><span class="s0">right </span><span class="s1">{ </span><span class="s2">right</span><span class="s1">: </span><span class="s4">18</span><span class="s3">px</span><span class="s1">; }</span>
+
+    <span class="s6">/* WHISKERS */</span>
+    <span class="s1">.</span><span class="s0">whisker </span><span class="s1">{</span>
+      <span class="s2">position</span><span class="s1">: </span><span class="s3">absolute</span><span class="s1">;</span>
+      <span class="s2">width</span><span class="s1">: </span><span class="s4">32</span><span class="s3">px</span><span class="s1">;</span>
+      <span class="s2">height</span><span class="s1">: </span><span class="s4">1.5</span><span class="s3">px</span><span class="s1">;</span>
+      <span class="s2">background</span><span class="s1">: </span><span class="s0">linear-gradient</span><span class="s1">(</span><span class="s3">to right</span><span class="s1">, </span><span class="s3">transparent</span><span class="s1">, </span><span class="s5">#4a3520</span><span class="s1">, </span><span class="s5">#4a3520</span><span class="s1">, </span><span class="s3">transparent</span><span class="s1">);</span>
+      <span class="s2">z-index</span><span class="s1">: </span><span class="s4">4</span><span class="s1">;</span>
+      <span class="s2">top</span><span class="s1">: </span><span class="s4">108</span><span class="s3">px</span><span class="s1">;</span>
+    <span class="s1">}</span>
+    <span class="s1">.</span><span class="s0">whisker</span><span class="s1">.</span><span class="s0">left-1 </span><span class="s1">{ </span><span class="s2">left</span><span class="s1">: -</span><span class="s4">18</span><span class="s3">px</span><span class="s1">; </span><span class="s2">transform</span><span class="s1">: </span><span class="s0">rotate</span><span class="s1">(-</span><span class="s4">12</span><span class="s3">deg</span><span class="s1">); }</span>
+    <span class="s1">.</span><span class="s0">whisker</span><span class="s1">.</span><span class="s0">left-2 </span><span class="s1">{ </span><span class="s2">left</span><span class="s1">: -</span><span class="s4">16</span><span class="s3">px</span><span class="s1">; </span><span class="s2">top</span><span class="s1">: </span><span class="s4">116</span><span class="s3">px</span><span class="s1">; </span><span class="s2">transform</span><span class="s1">: </span><span class="s0">rotate</span><span class="s1">(</span><span class="s4">0</span><span class="s3">deg</span><span class="s1">); }</span>
+    <span class="s1">.</span><span class="s0">whisker</span><span class="s1">.</span><span class="s0">left-3 </span><span class="s1">{ </span><span class="s2">left</span><span class="s1">: -</span><span class="s4">18</span><span class="s3">px</span><span class="s1">; </span><span class="s2">top</span><span class="s1">: </span><span class="s4">124</span><span class="s3">px</span><span class="s1">; </span><span class="s2">transform</span><span class="s1">: </span><span class="s0">rotate</span><span class="s1">(</span><span class="s4">12</span><span class="s3">deg</span><span class="s1">); }</span>
+    <span class="s1">.</span><span class="s0">whisker</span><span class="s1">.</span><span class="s0">right-1 </span><span class="s1">{ </span><span class="s2">right</span><span class="s1">: -</span><span class="s4">18</span><span class="s3">px</span><span class="s1">; </span><span class="s2">transform</span><span class="s1">: </span><span class="s0">rotate</span><span class="s1">(</span><span class="s4">12</span><span class="s3">deg</span><span class="s1">); }</span>
+    <span class="s1">.</span><span class="s0">whisker</span><span class="s1">.</span><span class="s0">right-2 </span><span class="s1">{ </span><span class="s2">right</span><span class="s1">: -</span><span class="s4">16</span><span class="s3">px</span><span class="s1">; </span><span class="s2">top</span><span class="s1">: </span><span class="s4">116</span><span class="s3">px</span><span class="s1">; </span><span class="s2">transform</span><span class="s1">: </span><span class="s0">rotate</span><span class="s1">(</span><span class="s4">0</span><span class="s3">deg</span><span class="s1">); }</span>
+    <span class="s1">.</span><span class="s0">whisker</span><span class="s1">.</span><span class="s0">right-3 </span><span class="s1">{ </span><span class="s2">right</span><span class="s1">: -</span><span class="s4">18</span><span class="s3">px</span><span class="s1">; </span><span class="s2">top</span><span class="s1">: </span><span class="s4">124</span><span class="s3">px</span><span class="s1">; </span><span class="s2">transform</span><span class="s1">: </span><span class="s0">rotate</span><span class="s1">(-</span><span class="s4">12</span><span class="s3">deg</span><span class="s1">); }</span>
+
+    <span class="s6">/* ============ SPEECH BUBBLE ============ */</span>
+    <span class="s1">.</span><span class="s0">speech </span><span class="s1">{</span>
+      <span class="s2">background</span><span class="s1">: </span><span class="s3">white</span><span class="s1">;</span>
+      <span class="s2">padding</span><span class="s1">: </span><span class="s4">14</span><span class="s3">px </span><span class="s4">22</span><span class="s3">px</span><span class="s1">;</span>
+      <span class="s2">border-radius</span><span class="s1">: </span><span class="s4">25</span><span class="s3">px</span><span class="s1">;</span>
+      <span class="s2">margin</span><span class="s1">: </span><span class="s4">5</span><span class="s3">px auto </span><span class="s4">20</span><span class="s3">px</span><span class="s1">;</span>
+      <span class="s2">font-size</span><span class="s1">: </span><span class="s4">1.15</span><span class="s3">em</span><span class="s1">;</span>
+      <span class="s2">color</span><span class="s1">: </span><span class="s5">#ff5b8a</span><span class="s1">;</span>
+      <span class="s2">font-weight</span><span class="s1">: </span><span class="s3">bold</span><span class="s1">;</span>
+      <span class="s2">position</span><span class="s1">: </span><span class="s3">relative</span><span class="s1">;</span>
+      <span class="s2">display</span><span class="s1">: </span><span class="s3">inline-block</span><span class="s1">;</span>
+      <span class="s2">box-shadow</span><span class="s1">: </span><span class="s4">0 5</span><span class="s3">px </span><span class="s4">15</span><span class="s3">px </span><span class="s0">rgba</span><span class="s1">(</span><span class="s4">0</span><span class="s1">,</span><span class="s4">0</span><span class="s1">,</span><span class="s4">0</span><span class="s1">,</span><span class="s4">0.1</span><span class="s1">);</span>
+      <span class="s2">border</span><span class="s1">: </span><span class="s4">2</span><span class="s3">px solid </span><span class="s5">#ffb3c6</span><span class="s1">;</span>
+      <span class="s2">max-width</span><span class="s1">: </span><span class="s4">90</span><span class="s1">%;</span>
+      <span class="s2">min-height</span><span class="s1">: </span><span class="s4">30</span><span class="s3">px</span><span class="s1">;</span>
+      <span class="s2">transition</span><span class="s1">: </span><span class="s3">all </span><span class="s4">0.3</span><span class="s3">s</span><span class="s1">;</span>
+      <span class="s2">animation</span><span class="s1">: </span><span class="s3">pop </span><span class="s4">0.4</span><span class="s3">s ease</span><span class="s1">;</span>
+    <span class="s1">}</span>
+    <span class="s7">@keyframes </span><span class="s0">pop </span><span class="s1">{</span>
+      <span class="s0">0% </span><span class="s1">{ </span><span class="s2">transform</span><span class="s1">: </span><span class="s0">scale</span><span class="s1">(</span><span class="s4">0.7</span><span class="s1">); </span><span class="s2">opacity</span><span class="s1">: </span><span class="s4">0</span><span class="s1">; }</span>
+      <span class="s0">70% </span><span class="s1">{ </span><span class="s2">transform</span><span class="s1">: </span><span class="s0">scale</span><span class="s1">(</span><span class="s4">1.1</span><span class="s1">); }</span>
+      <span class="s0">100% </span><span class="s1">{ </span><span class="s2">transform</span><span class="s1">: </span><span class="s0">scale</span><span class="s1">(</span><span class="s4">1</span><span class="s1">); </span><span class="s2">opacity</span><span class="s1">: </span><span class="s4">1</span><span class="s1">; }</span>
+    <span class="s1">}</span>
+    <span class="s1">.</span><span class="s0">speech</span><span class="s1">::</span><span class="s0">after </span><span class="s1">{</span>
+      <span class="s2">content</span><span class="s1">: </span><span class="s3">''</span><span class="s1">;</span>
+      <span class="s2">position</span><span class="s1">: </span><span class="s3">absolute</span><span class="s1">;</span>
+      <span class="s2">top</span><span class="s1">: -</span><span class="s4">12</span><span class="s3">px</span><span class="s1">;</span>
+      <span class="s2">left</span><span class="s1">: </span><span class="s4">50</span><span class="s1">%;</span>
+      <span class="s2">transform</span><span class="s1">: </span><span class="s0">translateX</span><span class="s1">(-</span><span class="s4">50</span><span class="s1">%);</span>
+      <span class="s2">width</span><span class="s1">: </span><span class="s4">0</span><span class="s1">;</span>
+      <span class="s2">height</span><span class="s1">: </span><span class="s4">0</span><span class="s1">;</span>
+      <span class="s2">border-left</span><span class="s1">: </span><span class="s4">12</span><span class="s3">px solid transparent</span><span class="s1">;</span>
+      <span class="s2">border-right</span><span class="s1">: </span><span class="s4">12</span><span class="s3">px solid transparent</span><span class="s1">;</span>
+      <span class="s2">border-bottom</span><span class="s1">: </span><span class="s4">12</span><span class="s3">px solid white</span><span class="s1">;</span>
+    <span class="s1">}</span>
+
+    <span class="s6">/* ============ BUTTONS ============ */</span>
+    <span class="s1">.</span><span class="s0">buttons </span><span class="s1">{</span>
+      <span class="s2">display</span><span class="s1">: </span><span class="s3">flex</span><span class="s1">;</span>
+      <span class="s2">justify-content</span><span class="s1">: </span><span class="s3">center</span><span class="s1">;</span>
+      <span class="s2">gap</span><span class="s1">: </span><span class="s4">25</span><span class="s3">px</span><span class="s1">;</span>
+      <span class="s2">margin-top</span><span class="s1">: </span><span class="s4">15</span><span class="s3">px</span><span class="s1">;</span>
+      <span class="s2">position</span><span class="s1">: </span><span class="s3">relative</span><span class="s1">;</span>
+      <span class="s2">height</span><span class="s1">: </span><span class="s4">65</span><span class="s3">px</span><span class="s1">;</span>
+      <span class="s2">align-items</span><span class="s1">: </span><span class="s3">center</span><span class="s1">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">button </span><span class="s1">{</span>
+      <span class="s2">padding</span><span class="s1">: </span><span class="s4">14</span><span class="s3">px </span><span class="s4">38</span><span class="s3">px</span><span class="s1">;</span>
+      <span class="s2">font-size</span><span class="s1">: </span><span class="s4">1.2</span><span class="s3">em</span><span class="s1">;</span>
+      <span class="s2">font-family</span><span class="s1">: </span><span class="s3">inherit</span><span class="s1">;</span>
+      <span class="s2">border</span><span class="s1">: </span><span class="s3">none</span><span class="s1">;</span>
+      <span class="s2">border-radius</span><span class="s1">: </span><span class="s4">50</span><span class="s3">px</span><span class="s1">;</span>
+      <span class="s2">cursor</span><span class="s1">: </span><span class="s3">pointer</span><span class="s1">;</span>
+      <span class="s2">font-weight</span><span class="s1">: </span><span class="s3">bold</span><span class="s1">;</span>
+      <span class="s2">transition</span><span class="s1">: </span><span class="s3">transform </span><span class="s4">0.2</span><span class="s3">s</span><span class="s1">, </span><span class="s3">box-shadow </span><span class="s4">0.2</span><span class="s3">s</span><span class="s1">, </span><span class="s3">font-size </span><span class="s4">0.3</span><span class="s3">s</span><span class="s1">, </span><span class="s3">padding </span><span class="s4">0.3</span><span class="s3">s</span><span class="s1">;</span>
+      <span class="s2">box-shadow</span><span class="s1">: </span><span class="s4">0 5</span><span class="s3">px </span><span class="s4">15</span><span class="s3">px </span><span class="s0">rgba</span><span class="s1">(</span><span class="s4">0</span><span class="s1">,</span><span class="s4">0</span><span class="s1">,</span><span class="s4">0</span><span class="s1">,</span><span class="s4">0.2</span><span class="s1">);</span>
+    <span class="s1">}</span>
+
+    <span class="s1">.</span><span class="s0">yes-btn </span><span class="s1">{</span>
+      <span class="s2">background</span><span class="s1">: </span><span class="s0">linear-gradient</span><span class="s1">(</span><span class="s4">135</span><span class="s3">deg</span><span class="s1">, </span><span class="s5">#66bb6a</span><span class="s1">, </span><span class="s5">#43a047</span><span class="s1">);</span>
+      <span class="s2">color</span><span class="s1">: </span><span class="s3">white</span><span class="s1">;</span>
+    <span class="s1">}</span>
+    <span class="s1">.</span><span class="s0">yes-btn</span><span class="s1">:</span><span class="s0">hover </span><span class="s1">{</span>
+      <span class="s2">transform</span><span class="s1">: </span><span class="s0">scale</span><span class="s1">(</span><span class="s4">1.15</span><span class="s1">);</span>
+      <span class="s2">box-shadow</span><span class="s1">: </span><span class="s4">0 8</span><span class="s3">px </span><span class="s4">25</span><span class="s3">px </span><span class="s0">rgba</span><span class="s1">(</span><span class="s4">76</span><span class="s1">, </span><span class="s4">175</span><span class="s1">, </span><span class="s4">80</span><span class="s1">, </span><span class="s4">0.5</span><span class="s1">);</span>
+    <span class="s1">}</span>
+
+    <span class="s1">.</span><span class="s0">no-btn </span><span class="s1">{</span>
+      <span class="s2">background</span><span class="s1">: </span><span class="s0">linear-gradient</span><span class="s1">(</span><span class="s4">135</span><span class="s3">deg</span><span class="s1">, </span><span class="s5">#ef5350</span><span class="s1">, </span><span class="s5">#c62828</span><span class="s1">);</span>
+      <span class="s2">color</span><span class="s1">: </span><span class="s3">white</span><span class="s1">;</span>
+      <span class="s2">transition</span><span class="s1">: </span><span class="s3">top </span><span class="s4">0.5</span><span class="s3">s ease</span><span class="s1">, </span><span class="s3">left </span><span class="s4">0.5</span><span class="s3">s ease</span><span class="s1">, </span><span class="s3">transform </span><span class="s4">0.2</span><span class="s3">s</span><span class="s1">;</span>
+    <span class="s1">}</span>
+    <span class="s1">.</span><span class="s0">no-btn</span><span class="s1">.</span><span class="s0">moving </span><span class="s1">{</span>
+      <span class="s2">position</span><span class="s1">: </span><span class="s3">fixed</span><span class="s1">;</span>
+      <span class="s2">margin</span><span class="s1">: </span><span class="s4">0</span><span class="s1">;</span>
+      <span class="s2">z-index</span><span class="s1">: </span><span class="s4">100</span><span class="s1">;</span>
+    <span class="s1">}</span>
+    <span class="s1">.</span><span class="s0">no-btn</span><span class="s1">:</span><span class="s0">hover </span><span class="s1">{ </span><span class="s2">transform</span><span class="s1">: </span><span class="s0">scale</span><span class="s1">(</span><span class="s4">1.05</span><span class="s1">); }</span>
+    <span class="s1">.</span><span class="s0">no-btn</span><span class="s1">.</span><span class="s0">disabled </span><span class="s1">{</span>
+      <span class="s2">background</span><span class="s1">: </span><span class="s5">#999</span><span class="s1">;</span>
+      <span class="s2">cursor</span><span class="s1">: </span><span class="s3">not-allowed</span><span class="s1">;</span>
+      <span class="s2">opacity</span><span class="s1">: </span><span class="s4">0.6</span><span class="s1">;</span>
+    <span class="s1">}</span>
+
+    <span class="s6">/* Win screen */</span>
+    <span class="s1">.</span><span class="s0">win-screen </span><span class="s1">{</span>
+      <span class="s2">display</span><span class="s1">: </span><span class="s3">none</span><span class="s1">;</span>
+      <span class="s2">text-align</span><span class="s1">: </span><span class="s3">center</span><span class="s1">;</span>
+    <span class="s1">}</span>
+    <span class="s1">.</span><span class="s0">win-screen</span><span class="s1">.</span><span class="s0">show </span><span class="s1">{ </span><span class="s2">display</span><span class="s1">: </span><span class="s3">block</span><span class="s1">; </span><span class="s2">animation</span><span class="s1">: </span><span class="s3">zoomIn </span><span class="s4">0.5</span><span class="s3">s ease</span><span class="s1">; }</span>
+    <span class="s7">@keyframes </span><span class="s0">zoomIn </span><span class="s1">{</span>
+      <span class="s0">from </span><span class="s1">{ </span><span class="s2">transform</span><span class="s1">: </span><span class="s0">scale</span><span class="s1">(</span><span class="s4">0</span><span class="s1">); </span><span class="s2">opacity</span><span class="s1">: </span><span class="s4">0</span><span class="s1">; }</span>
+      <span class="s0">to </span><span class="s1">{ </span><span class="s2">transform</span><span class="s1">: </span><span class="s0">scale</span><span class="s1">(</span><span class="s4">1</span><span class="s1">); </span><span class="s2">opacity</span><span class="s1">: </span><span class="s4">1</span><span class="s1">; }</span>
+    <span class="s1">}</span>
+    <span class="s1">.</span><span class="s0">win-screen h2 </span><span class="s1">{</span>
+      <span class="s2">color</span><span class="s1">: </span><span class="s5">#ff5b8a</span><span class="s1">;</span>
+      <span class="s2">font-size</span><span class="s1">: </span><span class="s4">1.8</span><span class="s3">em</span><span class="s1">;</span>
+      <span class="s2">margin</span><span class="s1">: </span><span class="s4">15</span><span class="s3">px </span><span class="s4">0</span><span class="s1">;</span>
+    <span class="s1">}</span>
+
+    <span class="s6">/* Confetti */</span>
+    <span class="s1">.</span><span class="s0">confetti </span><span class="s1">{</span>
+      <span class="s2">position</span><span class="s1">: </span><span class="s3">fixed</span><span class="s1">;</span>
+      <span class="s2">width</span><span class="s1">: </span><span class="s4">10</span><span class="s3">px</span><span class="s1">;</span>
+      <span class="s2">height</span><span class="s1">: </span><span class="s4">10</span><span class="s3">px</span><span class="s1">;</span>
+      <span class="s2">pointer-events</span><span class="s1">: </span><span class="s3">none</span><span class="s1">;</span>
+      <span class="s2">animation</span><span class="s1">: </span><span class="s3">confettiFall </span><span class="s4">3</span><span class="s3">s linear forwards</span><span class="s1">;</span>
+      <span class="s2">z-index</span><span class="s1">: </span><span class="s4">1000</span><span class="s1">;</span>
+    <span class="s1">}</span>
+    <span class="s7">@keyframes </span><span class="s0">confettiFall </span><span class="s1">{</span>
+      <span class="s0">0% </span><span class="s1">{ </span><span class="s2">transform</span><span class="s1">: </span><span class="s0">translateY</span><span class="s1">(-</span><span class="s4">100</span><span class="s3">vh</span><span class="s1">) </span><span class="s0">rotate</span><span class="s1">(</span><span class="s4">0</span><span class="s1">); </span><span class="s2">opacity</span><span class="s1">: </span><span class="s4">1</span><span class="s1">; }</span>
+      <span class="s0">100% </span><span class="s1">{ </span><span class="s2">transform</span><span class="s1">: </span><span class="s0">translateY</span><span class="s1">(</span><span class="s4">100</span><span class="s3">vh</span><span class="s1">) </span><span class="s0">rotate</span><span class="s1">(</span><span class="s4">720</span><span class="s3">deg</span><span class="s1">); </span><span class="s2">opacity</span><span class="s1">: </span><span class="s4">0</span><span class="s1">; }</span>
+    <span class="s1">}</span>
+
+    <span class="s7">@media </span><span class="s1">(</span><span class="s2">max-width</span><span class="s1">: </span><span class="s4">500</span><span class="s3">px</span><span class="s1">) {</span>
+      <span class="s0">h1 </span><span class="s1">{ </span><span class="s2">font-size</span><span class="s1">: </span><span class="s4">1.3</span><span class="s3">em</span><span class="s1">; }</span>
+      <span class="s1">.</span><span class="s0">speech </span><span class="s1">{ </span><span class="s2">font-size</span><span class="s1">: </span><span class="s4">1</span><span class="s3">em</span><span class="s1">; </span><span class="s2">padding</span><span class="s1">: </span><span class="s4">12</span><span class="s3">px </span><span class="s4">16</span><span class="s3">px</span><span class="s1">; }</span>
+      <span class="s0">button </span><span class="s1">{ </span><span class="s2">padding</span><span class="s1">: </span><span class="s4">12</span><span class="s3">px </span><span class="s4">28</span><span class="s3">px</span><span class="s1">; </span><span class="s2">font-size</span><span class="s1">: </span><span class="s4">1.05</span><span class="s3">em</span><span class="s1">; }</span>
+      <span class="s1">.</span><span class="s0">buttons </span><span class="s1">{ </span><span class="s2">gap</span><span class="s1">: </span><span class="s4">15</span><span class="s3">px</span><span class="s1">; }</span>
+      <span class="s1">.</span><span class="s0">kitten-wrap </span><span class="s1">{ </span><span class="s2">width</span><span class="s1">: </span><span class="s4">200</span><span class="s3">px</span><span class="s1">; </span><span class="s2">height</span><span class="s1">: </span><span class="s4">220</span><span class="s3">px</span><span class="s1">; }</span>
+    <span class="s1">}</span>
+  <span class="s0">&lt;/style&gt;</span>
+<span class="s0">&lt;/head&gt;</span>
+<span class="s0">&lt;body&gt;</span>
+
+<span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;container&quot; </span><span class="s2">id</span><span class="s3">=&quot;container&quot;</span><span class="s0">&gt;</span>
+  <span class="s6">&lt;!-- Main Screen --&gt;</span>
+  <span class="s0">&lt;div </span><span class="s2">id</span><span class="s3">=&quot;mainScreen&quot;</span><span class="s0">&gt;</span>
+    <span class="s0">&lt;h1&gt;</span><span class="s1">🌸 A Cute Kitten Wants to Meet You! 🌸</span><span class="s0">&lt;/h1&gt;</span>
+
+    <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;kitten-wrap&quot;</span><span class="s0">&gt;</span>
+      <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;kitten&quot; </span><span class="s2">id</span><span class="s3">=&quot;kitten&quot;</span><span class="s0">&gt;</span>
+        <span class="s6">&lt;!-- Tail --&gt;</span>
+        <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;tail&quot;</span><span class="s0">&gt;&lt;/div&gt;</span>
+
+        <span class="s6">&lt;!-- Body --&gt;</span>
+        <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;body&quot;</span><span class="s0">&gt;&lt;/div&gt;</span>
+
+        <span class="s6">&lt;!-- Paws with hearts --&gt;</span>
+        <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;paw left&quot;</span><span class="s0">&gt;</span>
+          <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;love-heart left&quot;</span><span class="s0">&gt;&lt;/div&gt;</span>
+        <span class="s0">&lt;/div&gt;</span>
+        <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;paw right&quot;</span><span class="s0">&gt;</span>
+          <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;love-heart right&quot;</span><span class="s0">&gt;&lt;/div&gt;</span>
+        <span class="s0">&lt;/div&gt;</span>
+
+        <span class="s6">&lt;!-- Head --&gt;</span>
+        <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;head&quot;</span><span class="s0">&gt;</span>
+          <span class="s6">&lt;!-- Ears --&gt;</span>
+          <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;ear left&quot;</span><span class="s0">&gt;&lt;div </span><span class="s2">class</span><span class="s3">=&quot;ear-inner&quot;</span><span class="s0">&gt;&lt;/div&gt;&lt;/div&gt;</span>
+          <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;ear right&quot;</span><span class="s0">&gt;&lt;div </span><span class="s2">class</span><span class="s3">=&quot;ear-inner&quot;</span><span class="s0">&gt;&lt;/div&gt;&lt;/div&gt;</span>
+
+          <span class="s6">&lt;!-- Eyes --&gt;</span>
+          <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;eye-wrap left&quot;</span><span class="s0">&gt;&lt;div </span><span class="s2">class</span><span class="s3">=&quot;eye&quot;</span><span class="s0">&gt;&lt;/div&gt;&lt;/div&gt;</span>
+          <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;eye-wrap right&quot;</span><span class="s0">&gt;&lt;div </span><span class="s2">class</span><span class="s3">=&quot;eye&quot;</span><span class="s0">&gt;&lt;/div&gt;&lt;/div&gt;</span>
+
+          <span class="s6">&lt;!-- Tears --&gt;</span>
+          <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;tear left&quot;</span><span class="s0">&gt;&lt;/div&gt;</span>
+          <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;tear right&quot;</span><span class="s0">&gt;&lt;/div&gt;</span>
+
+          <span class="s6">&lt;!-- Cheeks --&gt;</span>
+          <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;cheek left&quot;</span><span class="s0">&gt;&lt;/div&gt;</span>
+          <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;cheek right&quot;</span><span class="s0">&gt;&lt;/div&gt;</span>
+
+          <span class="s6">&lt;!-- Whiskers --&gt;</span>
+          <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;whisker left-1&quot;</span><span class="s0">&gt;&lt;/div&gt;</span>
+          <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;whisker left-2&quot;</span><span class="s0">&gt;&lt;/div&gt;</span>
+          <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;whisker left-3&quot;</span><span class="s0">&gt;&lt;/div&gt;</span>
+          <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;whisker right-1&quot;</span><span class="s0">&gt;&lt;/div&gt;</span>
+          <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;whisker right-2&quot;</span><span class="s0">&gt;&lt;/div&gt;</span>
+          <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;whisker right-3&quot;</span><span class="s0">&gt;&lt;/div&gt;</span>
+
+          <span class="s6">&lt;!-- Nose &amp; Mouth --&gt;</span>
+          <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;nose&quot;</span><span class="s0">&gt;&lt;/div&gt;</span>
+          <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;mouth&quot;</span><span class="s0">&gt;&lt;/div&gt;</span>
+        <span class="s0">&lt;/div&gt;</span>
+      <span class="s0">&lt;/div&gt;</span>
+    <span class="s0">&lt;/div&gt;</span>
+
+    <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;speech&quot; </span><span class="s2">id</span><span class="s3">=&quot;speech&quot;</span><span class="s0">&gt;</span><span class="s1">Will you be my friend? 🥺</span><span class="s0">&lt;/div&gt;</span>
+
+    <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;buttons&quot; </span><span class="s2">id</span><span class="s3">=&quot;buttons&quot;</span><span class="s0">&gt;</span>
+      <span class="s0">&lt;button </span><span class="s2">class</span><span class="s3">=&quot;yes-btn&quot; </span><span class="s2">id</span><span class="s3">=&quot;yesBtn&quot;</span><span class="s0">&gt;</span><span class="s1">Yes! 💖</span><span class="s0">&lt;/button&gt;</span>
+      <span class="s0">&lt;button </span><span class="s2">class</span><span class="s3">=&quot;no-btn&quot; </span><span class="s2">id</span><span class="s3">=&quot;noBtn&quot;</span><span class="s0">&gt;</span><span class="s1">No 😢</span><span class="s0">&lt;/button&gt;</span>
+    <span class="s0">&lt;/div&gt;</span>
+  <span class="s0">&lt;/div&gt;</span>
+
+  <span class="s6">&lt;!-- Win Screen --&gt;</span>
+  <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;win-screen&quot; </span><span class="s2">id</span><span class="s3">=&quot;winScreen&quot;</span><span class="s0">&gt;</span>
+    <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;kitten-wrap&quot;</span><span class="s0">&gt;</span>
+      <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;kitten show-love&quot; </span><span class="s2">id</span><span class="s3">=&quot;winKitten&quot;</span><span class="s0">&gt;</span>
+        <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;tail&quot;</span><span class="s0">&gt;&lt;/div&gt;</span>
+        <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;body&quot;</span><span class="s0">&gt;&lt;/div&gt;</span>
+        <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;paw left&quot;</span><span class="s0">&gt;&lt;div </span><span class="s2">class</span><span class="s3">=&quot;love-heart left&quot;</span><span class="s0">&gt;&lt;/div&gt;&lt;/div&gt;</span>
+        <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;paw right&quot;</span><span class="s0">&gt;&lt;div </span><span class="s2">class</span><span class="s3">=&quot;love-heart right&quot;</span><span class="s0">&gt;&lt;/div&gt;&lt;/div&gt;</span>
+        <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;head&quot;</span><span class="s0">&gt;</span>
+          <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;ear left&quot;</span><span class="s0">&gt;&lt;div </span><span class="s2">class</span><span class="s3">=&quot;ear-inner&quot;</span><span class="s0">&gt;&lt;/div&gt;&lt;/div&gt;</span>
+          <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;ear right&quot;</span><span class="s0">&gt;&lt;div </span><span class="s2">class</span><span class="s3">=&quot;ear-inner&quot;</span><span class="s0">&gt;&lt;/div&gt;&lt;/div&gt;</span>
+          <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;eye-wrap left&quot;</span><span class="s0">&gt;&lt;div </span><span class="s2">class</span><span class="s3">=&quot;eye&quot;</span><span class="s0">&gt;&lt;/div&gt;&lt;/div&gt;</span>
+          <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;eye-wrap right&quot;</span><span class="s0">&gt;&lt;div </span><span class="s2">class</span><span class="s3">=&quot;eye&quot;</span><span class="s0">&gt;&lt;/div&gt;&lt;/div&gt;</span>
+          <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;cheek left&quot;</span><span class="s0">&gt;&lt;/div&gt;</span>
+          <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;cheek right&quot;</span><span class="s0">&gt;&lt;/div&gt;</span>
+          <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;whisker left-1&quot;</span><span class="s0">&gt;&lt;/div&gt;</span>
+          <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;whisker left-2&quot;</span><span class="s0">&gt;&lt;/div&gt;</span>
+          <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;whisker left-3&quot;</span><span class="s0">&gt;&lt;/div&gt;</span>
+          <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;whisker right-1&quot;</span><span class="s0">&gt;&lt;/div&gt;</span>
+          <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;whisker right-2&quot;</span><span class="s0">&gt;&lt;/div&gt;</span>
+          <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;whisker right-3&quot;</span><span class="s0">&gt;&lt;/div&gt;</span>
+          <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;nose&quot;</span><span class="s0">&gt;&lt;/div&gt;</span>
+          <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;mouth&quot;</span><span class="s0">&gt;&lt;/div&gt;</span>
+        <span class="s0">&lt;/div&gt;</span>
+      <span class="s0">&lt;/div&gt;</span>
+    <span class="s0">&lt;/div&gt;</span>
+    <span class="s0">&lt;h2 </span><span class="s2">id</span><span class="s3">=&quot;winTitle&quot;</span><span class="s0">&gt;</span><span class="s1">YAY! 🎉</span><span class="s0">&lt;/h2&gt;</span>
+    <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;speech&quot; </span><span class="s2">id</span><span class="s3">=&quot;winSpeech&quot;</span><span class="s0">&gt;</span><span class="s1">We are best friends forever! 💕🐾</span><span class="s0">&lt;/div&gt;</span>
+  <span class="s0">&lt;/div&gt;</span>
+<span class="s0">&lt;/div&gt;</span>
+
+<span class="s0">&lt;script&gt;</span>
+  <span class="s7">const </span><span class="s1">noBtn = document.getElementById(</span><span class="s3">'noBtn'</span><span class="s1">);</span>
+  <span class="s7">const </span><span class="s1">yesBtn = document.getElementById(</span><span class="s3">'yesBtn'</span><span class="s1">);</span>
+  <span class="s7">const </span><span class="s1">kitten = document.getElementById(</span><span class="s3">'kitten'</span><span class="s1">);</span>
+  <span class="s7">const </span><span class="s1">speech = document.getElementById(</span><span class="s3">'speech'</span><span class="s1">);</span>
+  <span class="s7">const </span><span class="s1">mainScreen = document.getElementById(</span><span class="s3">'mainScreen'</span><span class="s1">);</span>
+  <span class="s7">const </span><span class="s1">winScreen = document.getElementById(</span><span class="s3">'winScreen'</span><span class="s1">);</span>
+  <span class="s7">const </span><span class="s1">winSpeech = document.getElementById(</span><span class="s3">'winSpeech'</span><span class="s1">);</span>
+  <span class="s7">const </span><span class="s1">winTitle = document.getElementById(</span><span class="s3">'winTitle'</span><span class="s1">);</span>
+
+  <span class="s6">// Messages for each &quot;No&quot; click</span>
+  <span class="s7">const </span><span class="s1">noMessages = [</span>
+    <span class="s3">&quot;please 🥺&quot;</span><span class="s1">,</span>
+    <span class="s3">&quot;itna bhi kya gussa karna, maan bhi jao nah 😢&quot;</span><span class="s1">,</span>
+    <span class="s3">&quot;please nah, ban jao nah mera frnd 😭&quot;</span><span class="s1">,</span>
+    <span class="s3">&quot;i promise, main bahut acha kheyal rakhunga apka, ab maan bhi jao nah 🥹&quot;</span><span class="s1">,</span>
+    <span class="s3">&quot;jao meko ab baat nehi karni 😤&quot;</span>
+  <span class="s1">];</span>
+
+  <span class="s7">let </span><span class="s1">noClickCount = </span><span class="s4">0</span><span class="s1">;</span>
+  <span class="s7">let </span><span class="s1">cryingTimeout;</span>
+
+  <span class="s6">// Move &quot;No&quot; button to a safe random location within the screen</span>
+  <span class="s7">function </span><span class="s1">moveNoButton() {</span>
+    <span class="s7">const </span><span class="s1">btnRect = noBtn.getBoundingClientRect();</span>
+    <span class="s7">const </span><span class="s1">btnWidth = btnRect.width;</span>
+    <span class="s7">const </span><span class="s1">btnHeight = btnRect.height;</span>
+    <span class="s7">const </span><span class="s1">padding = </span><span class="s4">20</span><span class="s1">;</span>
+
+    <span class="s6">// Make sure button stays within viewport</span>
+    <span class="s7">const </span><span class="s1">maxX = window.innerWidth - btnWidth - padding;</span>
+    <span class="s7">const </span><span class="s1">maxY = window.innerHeight - btnHeight - padding;</span>
+
+    <span class="s7">const </span><span class="s1">randomX = Math.max(padding, Math.random() * maxX);</span>
+    <span class="s7">const </span><span class="s1">randomY = Math.max(padding, Math.random() * maxY);</span>
+
+    <span class="s1">noBtn.classList.add(</span><span class="s3">'moving'</span><span class="s1">);</span>
+    <span class="s1">noBtn.style.left = randomX + </span><span class="s3">'px'</span><span class="s1">;</span>
+    <span class="s1">noBtn.style.top = randomY + </span><span class="s3">'px'</span><span class="s1">;</span>
+  <span class="s1">}</span>
+
+  <span class="s6">// Handle &quot;No&quot; button click</span>
+  <span class="s1">noBtn.addEventListener(</span><span class="s3">'click'</span><span class="s1">, handleNoClick);</span>
+
+  <span class="s7">function </span><span class="s1">handleNoClick(e) {</span>
+    <span class="s1">e.preventDefault();</span>
+
+    <span class="s6">// From 5th click onwards - kitten is upset and ignores</span>
+    <span class="s7">if </span><span class="s1">(noClickCount &gt;= </span><span class="s4">4</span><span class="s1">) {</span>
+      <span class="s1">speech.textContent = noMessages[</span><span class="s4">4</span><span class="s1">]; </span><span class="s6">// &quot;jao meko ab baat nehi karni&quot;</span>
+      <span class="s1">kitten.classList.remove(</span><span class="s3">'crying'</span><span class="s1">);</span>
+      <span class="s1">kitten.classList.add(</span><span class="s3">'upset'</span><span class="s1">);</span>
+
+      <span class="s6">// Disable the yes button visual encouragement, but still allow Yes</span>
+      <span class="s6">// Move the No button anyway</span>
+      <span class="s1">moveNoButton();</span>
+      <span class="s1">noClickCount++;</span>
+      <span class="s7">return</span><span class="s1">;</span>
+    <span class="s1">}</span>
+
+    <span class="s6">// Show appropriate message</span>
+    <span class="s1">speech.textContent = noMessages[noClickCount];</span>
+
+    <span class="s6">// Make kitten cry</span>
+    <span class="s1">kitten.classList.remove(</span><span class="s3">'upset'</span><span class="s1">);</span>
+    <span class="s1">kitten.classList.add(</span><span class="s3">'crying'</span><span class="s1">);</span>
+
+    <span class="s6">// Increase Yes button size as encouragement</span>
+    <span class="s7">const </span><span class="s1">currentSize = parseFloat(window.getComputedStyle(yesBtn).fontSize);</span>
+    <span class="s7">if </span><span class="s1">(currentSize &lt; </span><span class="s4">32</span><span class="s1">) {</span>
+      <span class="s1">yesBtn.style.fontSize = (currentSize + </span><span class="s4">3</span><span class="s1">) + </span><span class="s3">'px'</span><span class="s1">;</span>
+      <span class="s1">yesBtn.style.padding = (</span><span class="s4">14 </span><span class="s1">+ noClickCount * </span><span class="s4">2</span><span class="s1">) + </span><span class="s3">'px ' </span><span class="s1">+ (</span><span class="s4">38 </span><span class="s1">+ noClickCount * </span><span class="s4">4</span><span class="s1">) + </span><span class="s3">'px'</span><span class="s1">;</span>
+    <span class="s1">}</span>
+
+    <span class="s6">// Move No button</span>
+    <span class="s1">moveNoButton();</span>
+
+    <span class="s1">noClickCount++;</span>
+
+    <span class="s6">// Stop crying after some time if user doesn't interact</span>
+    <span class="s1">clearTimeout(cryingTimeout);</span>
+    <span class="s1">cryingTimeout = setTimeout(() =&gt; {</span>
+      <span class="s7">if </span><span class="s1">(noClickCount &lt; </span><span class="s4">5</span><span class="s1">) {</span>
+        <span class="s1">kitten.classList.remove(</span><span class="s3">'crying'</span><span class="s1">);</span>
+      <span class="s1">}</span>
+    <span class="s1">}, </span><span class="s4">4000</span><span class="s1">);</span>
+  <span class="s1">}</span>
+
+  <span class="s6">// Handle &quot;Yes&quot; button click</span>
+  <span class="s1">yesBtn.addEventListener(</span><span class="s3">'click'</span><span class="s1">, () =&gt; {</span>
+    <span class="s6">// Special message if user agrees on 2nd or 3rd try (1 or 2 No clicks)</span>
+    <span class="s7">if </span><span class="s1">(noClickCount &gt;= </span><span class="s4">1 </span><span class="s1">&amp;&amp; noClickCount &lt;= </span><span class="s4">2</span><span class="s1">) {</span>
+      <span class="s1">winTitle.textContent = </span><span class="s3">&quot;Thank You! 💕&quot;</span><span class="s1">;</span>
+      <span class="s1">winSpeech.textContent = </span><span class="s3">&quot;kitni jaldi maan gaye appp, thanks! 💖✨&quot;</span><span class="s1">;</span>
+    <span class="s1">} </span><span class="s7">else if </span><span class="s1">(noClickCount === </span><span class="s4">0</span><span class="s1">) {</span>
+      <span class="s1">winTitle.textContent = </span><span class="s3">&quot;YAY! 🎉&quot;</span><span class="s1">;</span>
+      <span class="s1">winSpeech.textContent = </span><span class="s3">&quot;We are best friends forever! 💕🐾&quot;</span><span class="s1">;</span>
+    <span class="s1">} </span><span class="s7">else if </span><span class="s1">(noClickCount &gt;= </span><span class="s4">3</span><span class="s1">) {</span>
+      <span class="s1">winTitle.textContent = </span><span class="s3">&quot;Finally! 🥰&quot;</span><span class="s1">;</span>
+      <span class="s1">winSpeech.textContent = </span><span class="s3">&quot;Aap mere sabse ache dost ho! Thank you! 💖🐾&quot;</span><span class="s1">;</span>
+    <span class="s1">}</span>
+
+    <span class="s1">mainScreen.style.display = </span><span class="s3">'none'</span><span class="s1">;</span>
+    <span class="s1">winScreen.classList.add(</span><span class="s3">'show'</span><span class="s1">);</span>
+    <span class="s1">launchConfetti();</span>
+  <span class="s1">});</span>
+
+  <span class="s6">// Confetti animation</span>
+  <span class="s7">function </span><span class="s1">launchConfetti() {</span>
+    <span class="s7">const </span><span class="s1">colors = [</span><span class="s3">'#ff5b8a'</span><span class="s1">, </span><span class="s3">'#ffb3c6'</span><span class="s1">, </span><span class="s3">'#66bb6a'</span><span class="s1">, </span><span class="s3">'#ffd700'</span><span class="s1">, </span><span class="s3">'#87ceeb'</span><span class="s1">, </span><span class="s3">'#ff9a9e'</span><span class="s1">, </span><span class="s3">'#fcb69f'</span><span class="s1">];</span>
+    <span class="s7">for </span><span class="s1">(</span><span class="s7">let </span><span class="s1">i = </span><span class="s4">0</span><span class="s1">; i &lt; </span><span class="s4">120</span><span class="s1">; i++) {</span>
+      <span class="s1">setTimeout(() =&gt; {</span>
+        <span class="s7">const </span><span class="s1">confetti = document.createElement(</span><span class="s3">'div'</span><span class="s1">);</span>
+        <span class="s1">confetti.className = </span><span class="s3">'confetti'</span><span class="s1">;</span>
+        <span class="s1">confetti.style.left = Math.random() * </span><span class="s4">100 </span><span class="s1">+ </span><span class="s3">'vw'</span><span class="s1">;</span>
+        <span class="s1">confetti.style.background = colors[Math.floor(Math.random() * colors.length)];</span>
+        <span class="s1">confetti.style.animationDuration = (Math.random() * </span><span class="s4">2 </span><span class="s1">+ </span><span class="s4">2</span><span class="s1">) + </span><span class="s3">'s'</span><span class="s1">;</span>
+        <span class="s1">confetti.style.borderRadius = Math.random() &gt; </span><span class="s4">0.5 </span><span class="s1">? </span><span class="s3">'50%' </span><span class="s1">: </span><span class="s3">'0'</span><span class="s1">;</span>
+        <span class="s1">confetti.style.width = (Math.random() * </span><span class="s4">8 </span><span class="s1">+ </span><span class="s4">6</span><span class="s1">) + </span><span class="s3">'px'</span><span class="s1">;</span>
+        <span class="s1">confetti.style.height = (Math.random() * </span><span class="s4">8 </span><span class="s1">+ </span><span class="s4">6</span><span class="s1">) + </span><span class="s3">'px'</span><span class="s1">;</span>
+        <span class="s1">document.body.appendChild(confetti);</span>
+        <span class="s1">setTimeout(() =&gt; confetti.remove(), </span><span class="s4">5000</span><span class="s1">);</span>
+      <span class="s1">}, i * </span><span class="s4">25</span><span class="s1">);</span>
+    <span class="s1">}</span>
+  <span class="s1">}</span>
+
+  <span class="s6">// Floating background decorations</span>
+  <span class="s7">function </span><span class="s1">createFloat() {</span>
+    <span class="s7">const </span><span class="s1">float = document.createElement(</span><span class="s3">'div'</span><span class="s1">);</span>
+    <span class="s1">float.className = </span><span class="s3">'float-bg'</span><span class="s1">;</span>
+    <span class="s1">float.textContent = [</span><span class="s3">'💕'</span><span class="s1">, </span><span class="s3">'💖'</span><span class="s1">, </span><span class="s3">'🌸'</span><span class="s1">, </span><span class="s3">'✨'</span><span class="s1">, </span><span class="s3">'🐾'</span><span class="s1">, </span><span class="s3">'⭐'</span><span class="s1">][Math.floor(Math.random() * </span><span class="s4">6</span><span class="s1">)];</span>
+    <span class="s1">float.style.left = Math.random() * </span><span class="s4">100 </span><span class="s1">+ </span><span class="s3">'vw'</span><span class="s1">;</span>
+    <span class="s1">float.style.fontSize = (Math.random() * </span><span class="s4">20 </span><span class="s1">+ </span><span class="s4">18</span><span class="s1">) + </span><span class="s3">'px'</span><span class="s1">;</span>
+    <span class="s1">float.style.animationDuration = (Math.random() * </span><span class="s4">5 </span><span class="s1">+ </span><span class="s4">6</span><span class="s1">) + </span><span class="s3">'s'</span><span class="s1">;</span>
+    <span class="s1">document.body.appendChild(float);</span>
+    <span class="s1">setTimeout(() =&gt; float.remove(), </span><span class="s4">12000</span><span class="s1">);</span>
+  <span class="s1">}</span>
+  <span class="s1">setInterval(createFloat, </span><span class="s4">700</span><span class="s1">);</span>
+
+  <span class="s6">// Reposition no button if window resizes</span>
+  <span class="s1">window.addEventListener(</span><span class="s3">'resize'</span><span class="s1">, () =&gt; {</span>
+    <span class="s7">if </span><span class="s1">(noBtn.classList.contains(</span><span class="s3">'moving'</span><span class="s1">)) {</span>
+      <span class="s7">const </span><span class="s1">btnRect = noBtn.getBoundingClientRect();</span>
+      <span class="s7">if </span><span class="s1">(btnRect.right &gt; window.innerWidth || btnRect.bottom &gt; window.innerHeight) {</span>
+        <span class="s1">moveNoButton();</span>
+      <span class="s1">}</span>
+    <span class="s1">}</span>
+  <span class="s1">});</span>
+<span class="s0">&lt;/script&gt;</span>
+<span class="s0">&lt;/body&gt;</span>
+<span class="s0">&lt;/html&gt;</span>
+</pre>
+</body>
+</html>
